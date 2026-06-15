@@ -13,4 +13,16 @@ import { Header } from './header/header';
 })
 export class App {
   protected readonly title = signal('aboutme');
+
+loading = true;
+
+ngOnInit() {
+  window.addEventListener('load', () => {
+    this.loading = false;
+  });
+
+  setTimeout(() => {
+    this.loading = false;
+  }, 1500);
+}
 }

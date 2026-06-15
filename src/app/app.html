@@ -1,3 +1,11 @@
-<app-header></app-header>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+@if (loading) {
+<div class="skeleton-page">
+  <div class="skeleton header"></div>
+  <div class="skeleton text"></div>
+  <div class="skeleton image"></div>
+</div>
+} @else {
+  <app-header></app-header>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+}
