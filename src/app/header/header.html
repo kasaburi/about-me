@@ -1,0 +1,36 @@
+<header class="header">
+    <div class="inbox">
+        <img [src]="kc" alt="kc"  class="kc">
+    </div>
+    <div class="page">
+        <li>
+            <a routerLink="/" routerLinkActive="mimdinare" [routerLinkActiveOptions]="{exact:true}" class="vebsaiti">
+                {{ 'ABOUT_ME.NAME' | translate }}
+            </a>
+        </li>
+        <li>
+            <a routerLink="/desing" routerLinkActive="mimdinare" class="vebsaiti">
+                {{ 'ABOUT_ME.DESIN' | translate }}
+            </a>
+        </li>
+    </div>
+    <button class="burger" (click)="toggleMenu()">☰</button>
+    <div class="desktop">
+        <div class="lang">
+            <button (click)="switchLanguage('ka')"  class="ka">KA</button>
+            <button (click)="switchLanguage('eng')" class="eng">ENG</button>
+        </div>
+        <button (click)="toggleDarkMode()" class="mode">
+            {{ theme === 'dark' ? '🌙' : '☀️' }}
+        </button>
+    </div> 
+    <div class="box"></div>
+    <div class="mobile-menu" *ngIf="menuOpen">
+        <button class="close-btn" (click)="closeMenu()">✖</button>
+        <button (click)="selectOption('ka')"  class="ka">ქართული</button>
+        <button (click)="selectOption('eng')"  class="eng">English</button>
+        <button (click)="toggleDarkMode(); closeMenu()" class="mode">
+            {{ theme === 'dark' ? '🌙' : '☀️' }}
+        </button>
+    </div>
+</header>

@@ -1,0 +1,179 @@
+import { CommonModule } from '@angular/common';
+import { HttpClient,  } from '@angular/common/http';
+import { Component } from '@angular/core';
+import { RouterModule, RouterOutlet } from '@angular/router';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+
+
+
+
+
+
+
+
+
+@Component({
+  selector: 'app-desing',
+  imports: [RouterModule,  CommonModule,TranslateModule],
+  templateUrl: './desing.html',
+  styleUrl: './desing.css',
+})
+
+export class Desing {
+
+
+
+
+
+
+
+
+  public img:string = 'assets/icon.png';
+
+   public ice: string[] = [
+    'assets/sss.png',
+    'assets/swee.png',
+    'assets/table.png',
+    'assets/ht.png',
+    'assets/ic.png',
+  
+  ];
+
+
+  public hotel: string[] = [
+    'assets/hot.png',
+    'assets/1.png',
+    'assets/2.png',
+    'assets/book.png',
+   
+  ];
+
+  public shoping: string[] = [
+    'assets/shop.png',
+    'assets/shopmenu.png',
+    'assets/sho.png',
+    'assets/shoping.png',
+
+  
+
+    
+  ];
+
+public restoranimg:string[]=[
+   'assets/ress.png',
+   'assets/restoran.png',
+   'assets/res.png',
+   
+
+];
+
+
+
+
+  currentIndex1 = 0;
+
+ public Index2: number = 0;
+
+  next1(): void {
+    this.currentIndex1 = (this.currentIndex1 + 1) % this.shoping.length;
+  }
+
+  prev1(): void {
+    this.currentIndex1 =
+      (this.currentIndex1 - 1 + this.shoping.length) % this.shoping.length;
+  }
+
+
+
+
+   public Index: number = 0;
+
+
+
+prev() {
+  this.Index = (this.Index - 1 + this.ice.length) % this.ice.length;
+}
+
+next() {
+  this.Index = (this.Index + 1) % this.ice.length;
+}
+
+
+
+  Indexres: number = 0;
+
+  resNext(): void {
+    this.Indexres++;
+
+    if (this.Indexres >= this.restoranimg.length) {
+      this.Indexres = 0;
+    }
+  }
+
+  resPrev(): void {
+    this.Indexres--;
+
+    if (this.Indexres < 0) {
+      this.Indexres = this.restoranimg.length - 1;
+    }
+  }
+
+iceIndex = 0;
+
+iceNext() {
+  if (!this.ice?.length) return;
+  this.iceIndex = (this.iceIndex + 1) % this.ice.length;
+}
+
+icePrev() {
+  if (!this.ice?.length) return;
+  this.iceIndex =
+    (this.iceIndex - 1 + this.ice.length) % this.ice.length;
+}
+
+goToIce(event: Event) {
+  event.preventDefault();
+  window.open('https://sweet-html.vercel.app/', '_blank');
+}
+
+
+
+hotelIndex = 0;
+
+hotelNext() {
+  if (!this.hotel?.length) return;
+  this.hotelIndex = (this.hotelIndex + 1) % this.hotel.length;
+}
+
+hotelPrev() {
+  if (!this.hotel?.length) return;
+  this.hotelIndex =
+    (this.hotelIndex - 1 + this.hotel.length) % this.hotel.length;
+}
+
+goToHotel(event: Event) {
+  event.preventDefault();
+  window.open('https://hotel-eta-six.vercel.app/', '_blank');
+}
+
+
+
+
+
+
+
+
+goToShop(event: Event) {
+  event.preventDefault();
+  window.open('https://shoping-seven-rho.vercel.app/', '_blank');
+}
+
+goToRestoran(event: Event) {
+  event.preventDefault();
+  window.open('https://restoran-one-bice.vercel.app/', '_blank');
+}
+
+
+
+
+}

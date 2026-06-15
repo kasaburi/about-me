@@ -1,0 +1,168 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans", sans-serif;
+ 
+}
+
+body {
+  background: #fffbec;
+
+}
+
+body.dark-mode {
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(123, 147, 211, 0.18),
+      transparent 35%
+    ),
+ 
+    linear-gradient(
+      135deg,
+      #090909,
+      #07071c,
+      #01011a
+    );
+
+  color: #fbf9f9;
+}
+
+.card {
+  color: inherit;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+
+
+
+}
+
+body.dark-mode .conteiner2{
+  background: white;
+  box-shadow: 0 4px 10px rgba(66, 65, 65, 0.308);
+  color: black !important;
+}
+body.dark-mode .projects-text{
+  color: black !important;
+}
+
+body.dark-mode #footer1 {
+  background:#000017;
+
+}
+
+body.dark-mode .border{
+ padding-left: 20px;
+   color: black;
+   border-radius: 13px;
+   
+}
+
+
+body.dark-mode .shoping{
+
+    color: black;
+
+}
+
+body.dark-mode .hotel{
+ 
+    color: black;
+}
+body.dark-mode .restoran{
+ 
+    color: black;
+}
+body.dark-mode .header{
+    color: black;
+}
+
+
+  body.dark-mode .eng:hover{
+  background-color: #908f8532;
+
+}
+
+
+  body.dark-mode .ka:hover{
+  background-color: #908f8532;
+
+}
+
+body.dark-mode  .proect{
+  color: white;
+  background: linear-gradient(
+    120deg,
+     hsl(240, 94%, 14%),
+    #2680e1e8,
+     hsl(240, 96%, 21%)
+ 
+  );
+}
+body.dark-mode  .proect:hover{
+    box-shadow:
+    0 6px 16px rgba(71, 44, 170, 0.358),
+    0 0 13px rgba(12, 1, 54, 0.449);
+}
+
+
+body.dark-mode .card,
+body.dark-mode .card1,
+body.dark-mode .card2 {
+  box-shadow:
+    0 6px 16px rgba(71, 44, 170, 0.358),
+    0 0 13px rgba(12, 1, 54, 0.449);
+}
+
+body.dark-mode .card:hover,
+body.dark-mode .card1:hover,
+body.dark-mode .card2:hover {
+  transform: translateY(-8px) scale(1.02);
+
+  box-shadow:
+    0 12px 25px rgba(26, 2, 131, 0.348),
+    0 0 20px rgba(40, 24, 105, 0.473);
+}
+
+
+body.dark-mode h1{
+  color: black;
+}
+
+
+
+@media screen  and (max-width: 500px){
+  body.dark-mode  .inbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 7vh;
+    background: lab(97.6% 1.67 0.58) !important;
+  
+  
+}
+
+  body.dark-mode  .burger{
+    color: rgb(241, 237, 228);
+    font-size: 40px;
+  }
+
+
+
+
+body.dark-mode .conteiner2{
+  background: black;
+  box-shadow: 0 4px 10px rgba(66, 65, 65, 0.308);
+  color: white !important;
+}
+body.dark-mode .projects-text{
+  color: white !important;
+}
+
+
+
+
+}

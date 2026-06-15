@@ -1,0 +1,70 @@
+<main>
+    <div class="desing">
+        <img [src]="desing"  alt="desing"  class="desing1">
+        <div class="piar">
+             <p class="see" [innerHTML]="'ABOUT_ME.des' | translate"\u003e></p>
+             <p>UI/UX  Web Design </p>
+        </div>
+    </div>
+    <div class="conteiner">
+        <div class="box2">
+            <div class="slider">
+                <button (click)="prevSlide()" class="prevSlide"> ⬅ </button>
+                <div class="item">
+                    <img [src]="person[currentSlide1]" alt="user persona" class="person"   (click)="openPopup()">
+                </div>
+                <button (click)="nextSlide()" class="nextSlide"> ➡</button>
+            </div>
+            <div class="popup" *ngIf="showPopup" (click)="closePopup()">
+                <button class="closePopup" (click)="closePopup(); $event.stopPropagation()">✖</button>
+                <button class="popprev" (click)="popprev(); $event.stopPropagation()"> ⬅ </button>
+                <img [src]="person[currentSlide2]" class="popupimg" alt="preview" (click)="$event.stopPropagation()">
+                <button class="popnex" (click)="popnex(); $event.stopPropagation()"> ➡ </button>
+            </div>
+            <div class="wiframe">
+                <p>wireframe</p>
+                <div class="gallery">
+                    <button (click)="prevImage()" class="prev">⬅</button>
+                    <img [src]="images[currentIndex]" class="imgwiframe"   alt="project image"(click)="nextImage()"/>
+                    <button (click)="nextImage()" class="next">➡</button>
+                </div> 
+            </div>
+        </div>
+        <div class="borderbox">
+            <div class="desktop">
+                <div class="gallery1">
+                    <button (click)="deskprev()" class="prevdesk">⬅</button>
+                    <img [src]="imagedesktop[deskindex]" class="imgdesk"            alt="project image"(click)="deskprev()"/>
+                    <button (click)="desknex()" class="nexdeskt">➡</button>
+                </div>
+                <div class="mobile">
+                   <div class="gallerymob">
+                        <button (click)="prevmob()" class="prevmob">⬅</button>
+                        <img [src]="imgmob [indexmob]" class="mobimg"  alt="mobile project"(click)="prevmob()"/>
+                        <button (click)="nexmob()" class="mobnex">➡</button>
+                   </div>
+                </div>
+            </div>
+             <div class="version"> 
+                <div  [innerHTML]="'ABOUT_ME.prototyp' | translate"\u003e   class="bmul"></div>
+                <div class="version1">
+                    <div class="mobbox">
+                        <p class="mobileversion">mobile version</p>
+                        <ul>
+                            <li><a href="https://www.figma.com/proto/dFtulwpTBAyVFlxiocLBu6/Untitled?node-id=263-84\u0026t=EbRt5QtvKKa2saTX-1" target="_blank">shop.ge </a></li>
+                            <li><a href="https://www.figma.com/proto/dFtulwpTBAyVFlxiocLBu6/Untitled?node-id=171-116\u0026t=EbRt5QtvKKa2saTX-1" target="_blank">ticket.ge</a></li>
+                        </ul>
+                    </div>
+                    <div class="deskbox">
+                        <p class="desktopversio">desktop versio</p>
+                        <ul>
+                            <li><a href="https://www.figma.com/proto/dFtulwpTBAyVFlxiocLBu6/Untitled?node-id=688-500&t=EbRt5QtvKKa2saTX-1"target="_blank">ticket.ge</a></li>
+                            <li><a href="https://www.figma.com/proto/dFtulwpTBAyVFlxiocLBu6/Untitled?node-id=828-1085&t=EbRt5QtvKKa2saTX-1"  target="_blank">shop.ge</a></li>
+                            <li><a href="https://www.figma.com/proto/ewUQ0o8XthMn6vwORDWBg5/Untitled?node-id=453-499\u0026t=LBVD81xKEp4jdGff-1"target="_blank">restoran</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
