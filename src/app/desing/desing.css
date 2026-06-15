@@ -10,9 +10,10 @@ main{
    
 }
 article{
-    min-height: 180vh;
+   
     padding-bottom: 6%;
     display: flex;
+     min-height: 180vh;
     align-items: center;
     justify-content: center;
     flex-direction: row;
@@ -135,11 +136,9 @@ p{
 
   width: 50vw;
   min-height: 10vh;
-
   border-radius: 5px;
   position: relative;
   overflow: hidden;
-
   background: linear-gradient(
     120deg,
   #ddd6fa,
@@ -834,7 +833,8 @@ gap:2%;
 }
 
 .proect{
-  margin-top: 20px;
+  margin-top: 30px;
+  min-height: 8vh;
 }
 
 }
@@ -942,6 +942,7 @@ height: auto;
 }
 .proect{
   width: 80vw;
+  min-height: 6vh;
   
 }
 h3{

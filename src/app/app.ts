@@ -1,28 +1,24 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-
-import { CommonModule } from '@angular/common';
 import { Footer } from './footer/footer';
 import { Header } from './header/header';
 
 @Component({
   selector: 'app-root',
-  imports: [Header ,Footer,RouterOutlet],
+  standalone: true,
+  imports: [Header, Footer, RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {
-  protected readonly title = signal('aboutme');
+export class App implements OnInit {
 
-loading = true;
+  title = signal('aboutme');
 
-ngOnInit() {
-  window.addEventListener('load', () => {
-    this.loading = false;
-  });
+  loading = signal(true);
 
-  setTimeout(() => {
-    this.loading = false;
-  }, 1500);
-}
+  ngOnInit() {
+    setTimeout(() => {
+      this.loading.set(false);
+    }, 1200);
+  }
 }
