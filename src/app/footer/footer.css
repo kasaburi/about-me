@@ -232,10 +232,9 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   max-width: 20vw;
   height: 50vh;
-  gap:5px;
   padding: 20px;
   background-size: cover;
   background-position: center;
@@ -255,7 +254,7 @@ footer{
   display: flex;
   gap:10%;
   justify-content: center;
-  height: 30vh;
+  height: 25vh;
   width: 90%;
   align-items: center;
   flex-direction: column;
@@ -263,7 +262,9 @@ footer{
 
 
 
-
+#ulid{
+  gap:10px;
+}
 
 
 
