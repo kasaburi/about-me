@@ -1,3 +1,4 @@
+
 // import { ApplicationConfig, importProvidersFrom, provideBrowserGlobalErrorListeners, provideZoneChangeDetection } from '@angular/core';
 // import { provideRouter } from '@angular/router';
 // import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
@@ -6,13 +7,20 @@
 // import { routes } from './app.routes';
 // import { Observable } from 'rxjs';
 
-// // Custom loader for Angular 16
+
+// import { Injectable } from '@angular/core';
+
+
+// @Injectable({ providedIn: 'root' })
 // export class CustomLoader implements TranslateLoader {
 //   constructor(private http: HttpClient) {}
+
+//   // type დასაფიქსირებელია
 //   getTranslation(lang: string): Observable<any> {
 //     return this.http.get(`assets/i18n/${lang}.json`);
 //   }
 // }
+
 
 // export const appConfig: ApplicationConfig = {
 //   providers: [
@@ -32,51 +40,42 @@
 // };
 
 
- import { ApplicationConfig, importProvidersFrom, provideBrowserGlobalErrorListeners, provideZoneChangeDetection } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import {
+  ApplicationConfig,
+  importProvidersFrom,
+  provideBrowserGlobalErrorListeners,
+  provideZoneChangeDetection
+} from '@angular/core';
+
+import { provideRouter, withInMemoryScrolling } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient } from '@angular/common/http';
 import { routes } from './app.routes';
 import { Observable } from 'rxjs';
-
-
 import { Injectable } from '@angular/core';
-
 
 @Injectable({ providedIn: 'root' })
 export class CustomLoader implements TranslateLoader {
   constructor(private http: HttpClient) {}
 
-  // type დასაფიქსირებელია
   getTranslation(lang: string): Observable<any> {
     return this.http.get(`assets/i18n/${lang}.json`);
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideZoneChangeDetection({ eventCoalescing: true }),
-    provideRouter(routes),
+
+    provideRouter(
+      routes,
+      withInMemoryScrolling({
+        scrollPositionRestoration: 'top'
+      })
+    ),
+
     importProvidersFrom(
       HttpClientModule,
       TranslateModule.forRoot({
@@ -88,5 +87,3 @@ export const appConfig: ApplicationConfig = {
     )
   ]
 };
-
-
