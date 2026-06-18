@@ -38,18 +38,6 @@ langMenuOpen = false;
 
 public img:string="assets/pcc.png";
 public imgs:string="assets/desktop.png";
-
-
-
-// public emp:string="assets/emp.png",
-// public flow:string="assets/Flow.png",
-// public person:string[]=[
-//   "assets/person.png",
-//   "assets/emp.png",
-//   "assets/Flow.png",
-// ];
-
-
 public desing:string="assets/ph1.png";
 
 
@@ -65,21 +53,6 @@ public images: string[] = [
 ];
 
 
-
-// desktop
-
-
-// public imagedesktop: string[] = [
-//   "assets/aaa.png",
-//   "assets/aaaa.png",
-//   "assets/ann.png",
-//   "assets/b.png",
-//   "assets/bb.png",
-//   "assets/bbb.png",
-//   "assets/res1.png",
-//   "assets/ccc.png",
-//    "assets/tr.png",
-// ];
 
 public imagedesktop: string[] = [
 
@@ -110,7 +83,9 @@ public person:string[]=[
  "assets/person.png",
  "assets/emp.png",
  "assets/Flow.png",
- "assets/reserch.png"
+ "assets/reserch.png",
+ "assets/ing.png",
+ "assets/userin.png"
 ];
 
 currentSlide1:number = 0;
