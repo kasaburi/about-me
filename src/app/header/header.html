@@ -27,8 +27,8 @@
     <div class="box"></div>
     <div class="mobile-menu" *ngIf="menuOpen">
         <button class="close-btn" (click)="closeMenu()">✖</button>
-        <button (click)="selectOption('ka')"  class="ka">ქართული</button>
-        <button (click)="selectOption('eng')"  class="eng">English</button>
+        <button (click)="selectOption('ka')" id="geo" class="ka">ქართული</button>
+        <button (click)="selectOption('eng')"  id="english" class="eng">English</button>
         <button (click)="toggleDarkMode(); closeMenu()" class="mode">
             {{ theme === 'dark' ? '🌙' : '☀️' }}
         </button>

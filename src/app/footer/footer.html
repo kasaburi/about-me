@@ -2,7 +2,7 @@
     <div class="conteiner" id="footer1">
         <button class="navprev" (click)="prevCard()">⬅</button>
         <div class="slider-wrapper">
-            <div class="card-slide" [style.transform]="'translateX(-' + currentCard * 100 + '%)'">
+            <div class="card-slide"[style.transform]="'translateX(-' + currentCard * 100 + '%)'">
                 <div class="card">
                     <p class="one">Certificate Card 🏆</p>
                     <div class="slider" (click)="changeSlide($event)">
@@ -13,7 +13,7 @@
                     </p>
                 </div>
                 <div class="card1">
-                    <p>Front-End Development📱</p>
+                    <p  class="one">Front-End Development📱</p>
                     <ul class="ul">
                         <li>Html</li>
                         <li>css</li>
@@ -25,7 +25,7 @@
                     </p>
                 </div>
                 <div class="card2">
-                    <p>UI/UX Design 🎨</p>
+                    <p  class="one">UI/UX Design 🎨</p>
                     <ul id="ulid" class="ul" >
                         <li>Figma</li>
                         <li>Wireframing</li>

@@ -16,6 +16,7 @@
 .inbox{
     width: 10vw;
     text-align: center;
+
 }
 
 
@@ -88,6 +89,7 @@ h1{
 
 .kc{
    width: 40px;
+  
 }
 .dark{
   border: none;
@@ -146,6 +148,15 @@ h1{
 .lang-menu.show {
   display: flex;
 }
+
+#english:hover,
+#geo:hover {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
 
 .lang-menu button {
   background: #333;
@@ -301,6 +312,8 @@ a{
 
 .inbox{
   background: none !important;
+   background-color: none;
+   background: none;
 }
     .burger {
         display: block; 

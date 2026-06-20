@@ -13,14 +13,5 @@ export const routes: Routes = [
   path: 'desing',
   component: Website,
 }
-//    {
-//        path: "" ,
-//        component: Desing,
-//     },
-
-//         {
-//        path: "website" ,
-//        component: Website,
-//     },
 
 ];

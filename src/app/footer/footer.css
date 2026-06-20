@@ -1,9 +1,9 @@
-footer{
+
+ footer{
   display: flex;
   flex-direction: column;
   gap:50px;
-  /* min-height: 60vh;
-  height: auto; */
+
 }
 .kc1{
   width: 50px;
@@ -333,7 +333,9 @@ background: linear-gradient(160deg,#ddd6fa,#7b93d38c,#ddd6fa);
 
 
 
-
+.one{
+ font-weight: bolder;
+}
 
 
 
@@ -345,37 +347,44 @@ footer{
   min-height: 70vh;
  height:auto;
  align-items: center;
- width:  auto  ;
+ width: 100%;
 }
 
 .social-links{
-  width: 75vw;
+  width: 100%;
+  gap:10px;
  
 }
 
 
 .github1{
-  width: 20vw;
+  width: 12vw;
+  border: 2px solid violet;
+  font-size: 12px;
 
 }
 .LinkedIn{
   width: 20vw;
+  font-size: 12px;
 }
 .gmail{
   width: 20vw;
+  font-size: 12px;
 }
 
 .git{
     width: 40px;
+    font-size: 12px;
 }
 
 .github2{
   width: 40px;
+  font-size: 12px;
 }
 
  .slider-wrapper{
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  justify-content: space-between;
+
 
 
 
@@ -391,13 +400,12 @@ padding-left: 0px;
 }
 
 .card,
-.card1,
-.card2{
+.card1, .card2 {
   max-width: 35vw;
   min-width: 20vw;
   min-height: 45vh;
   height: auto;
- margin-left: 10px;
+ margin-left: 5%;
 
 } 
 
@@ -442,6 +450,28 @@ min-width: 25vw;
     display:none;
 }
 
+
+.footer-container{
+  font-size: 12px;
+}
+
+
+
+
+.foter{
+  gap:5px;
+}
+
+.box{
+  width: 100%;
+}
+
+
+.kc1{
+  padding-left: 10px;
+}
+
+
 }
 
 
@@ -461,10 +491,11 @@ min-width: 25vw;
 
 footer{
   gap:20px;
-  min-height: 40vh;
+  min-height: 37vh;
  height:auto;
  align-items: center;
- width: 100%;
+ padding: 0;
+ margin: 0;
 
 
 }
@@ -477,48 +508,57 @@ footer{
  gap:5px;
 margin-left: 20px;
  height: auto;
- min-height: 50vh;
+
 
 }
 
-.card,
-.card1,
-.card2{
+.card{
     flex: 0 0 100%;
-    width: 100%;
     max-width: 100%;
-    min-height: 40vh;
+    max-height: 40vh;
+    padding-right: 10%;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-right: 90px;
-    justify-content: center;
     gap: 15px;
     box-sizing: border-box;
 }
 
 
+.card1{
+    flex: 0 0 100%;
+    max-width: 100%;
+    max-height: 60vh;
+    height: auto;
+    padding-right: 15%;
+    gap: 15px;
+    box-sizing: border-box;
+   
+}
+
+.card2{
+    flex: 0 0 100%;
+    max-width: 100%;
+    max-height: 60vh;
+    height: auto;
+    padding-right: 20%;
+    gap: 15px;
+    box-sizing: border-box;
+   
+}
+
+
+
 .slider-wrapper{
     max-width: 80vw;
     min-width: auto;
-  max-height: 70vh;
 
 }
 
 
 .card-slide{
-
-  display: flex;
-  transition: transform .5s ease;
-
-}
-
-
-.tex
-{
-
-  width: 60vw;
+height: auto;
+background: #fffbec;
+border: none;
+transition: transform .5s ease;
 
 }
 
@@ -531,7 +571,22 @@ margin-left: 20px;
     transform:translateY(-50%);
     z-index:10;
 }
-.navprev,
+.navprev{
+    display: block;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    background: rgba(0,0,0,.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 18px;
+}
+
 .navnext{
     display: block;
     position: absolute;
@@ -545,10 +600,8 @@ margin-left: 20px;
     border-radius: 50%;
     cursor: pointer;
     z-index: 10;
-    font-size: 22px;
+    font-size: 18px;
 }
-
-
 .navprev{
     left: 10px;
 }
@@ -564,25 +617,32 @@ margin-left: 20px;
 
 
 .slider{
-  min-width: 60vw;
+  min-width: 40vw;
   justify-items: center;
   height: auto;
-  max-height: 40vh;
+  min-height: 10vh;
 
 }
 
 
 .ul{
+  display: flex;
   gap:8px;
   max-height: 20vh;
-  width: 20%;
+  width: 30%;
+
+}
+.tex
+{
+
+  width: 200px;
+
 
 }
 
-
 .slide-img{
+  object-fit: contain;
   width: 100%;
-  max-height: 50vh;
   height: auto; 
  
 
@@ -602,15 +662,16 @@ margin-left: 20px;
 
 .social-links{
   flex-wrap: nowrap;
- width:100%;
+
  
 }
 
 .box{
   display: flex;
   width:100%;
-  min-height: 20vh;
+  min-height: 16vh;
   align-items: center;
+
 
 
 
@@ -618,14 +679,18 @@ margin-left: 20px;
 
 
 .footer-container{
-  width: 70%;
+
+  font-size: 14px;
+  margin: 10px;
+
+
+
 
 }
 
 
 
 .social-links{
-  width: 80%;
   color: white;
 
 }
@@ -652,7 +717,8 @@ margin-left: 20px;
 .foter{
   display: flex;
   flex-direction: column;
-  max-width: 100%;
+  width: 100%;
+
 
 }
 
@@ -676,5 +742,3 @@ margin-left: 20px;
 
 
 }
-
-

@@ -1,8 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { HttpClient,  } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { RouterModule, RouterOutlet } from '@angular/router';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { RouterModule,  } from '@angular/router';
+import { TranslateModule, } from '@ngx-translate/core';
 
 
 
@@ -131,10 +130,6 @@ icePrev() {
     (this.iceIndex - 1 + this.ice.length) % this.ice.length;
 }
 
-goToIce(event: Event) {
-  event.preventDefault();
-  window.open('https://sweet-html.vercel.app/', '_blank');
-}
 
 
 
@@ -151,27 +146,12 @@ hotelPrev() {
     (this.hotelIndex - 1 + this.hotel.length) % this.hotel.length;
 }
 
-goToHotel(event: Event) {
-  event.preventDefault();
-  window.open('https://hotel-eta-six.vercel.app/', '_blank');
-}
 
 
 
 
 
 
-
-
-goToShop(event: Event) {
-  event.preventDefault();
-  window.open('https://shoping-seven-rho.vercel.app/', '_blank');
-}
-
-goToRestoran(event: Event) {
-  event.preventDefault();
-  window.open('https://restoran-one-bice.vercel.app/', '_blank');
-}
 
 
 

@@ -33,8 +33,7 @@ langMenuOpen = false;
 toggleLangMenu() {
   this.langMenuOpen = !this.langMenuOpen;
 }
-// currentCard = 0;
-// totalCards = 3;
+
 
 currentCard = 0;
 isMobile = window.innerWidth <= 700;
@@ -47,6 +46,21 @@ onResize() {
     this.currentCard = 0;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 nextCard() {
   if (this.currentCard < 2) {
@@ -82,7 +96,6 @@ changeSlide(event: MouseEvent) {
 }
 
 currentIndex = 0;
-// startX = 0;
 
 next() {
   if (!this.images?.length) return;
@@ -99,8 +112,7 @@ prev() {
 
 
 
+
+
 }
-
-
-
 

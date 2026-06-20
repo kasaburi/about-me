@@ -355,23 +355,14 @@ ul :hover{
 }
 
 
-.prevmob:hover,
-.mobnex:hover{
-    background: rgba(0, 0, 0, 0.7);
-    transform: translateY(-50%) scale(1.1);
-}
 
 
 .prevmob:hover,
 .mobnex:hover{
     background: rgba(0, 0, 0, 0.7);
-    transform: scale(1.1);
+
 }
 
-.prevmob:active,
-.mobnex:active{
-    transform: scale(0.95);
-}
 
 
 .desing{

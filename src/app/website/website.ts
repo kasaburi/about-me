@@ -36,14 +36,73 @@ langMenuOpen = false;
 
 
 
-public img:string="assets/pcc.png";
-public imgs:string="assets/desktop.png";
-public desing:string="assets/ph1.png";
 
 
 
 
-// wiframe
+
+
+
+
+
+
+
+
+
+public img: string = "assets/pcc.png";
+public imgs: string = "assets/desktop.png";
+public desing: string = "assets/ph1.png";
+
+
+// ======================
+// PERSON SLIDER
+// ======================
+public person: string[] = [
+  "assets/person.png",
+  "assets/emp.png",
+  "assets/Flow.png",
+  "assets/reserch.png",
+  "assets/ing.png",
+  "assets/userin.png"
+];
+
+currentSlide1: number = 0;
+currentSlide2: number = 0;
+showPopup: boolean = false;
+
+nextSlide() {
+  this.currentSlide1 =
+    (this.currentSlide1 + 1) % this.person.length;
+}
+
+prevSlide() {
+  this.currentSlide1 =
+    (this.currentSlide1 - 1 + this.person.length) % this.person.length;
+}
+
+openPopup() {
+  this.currentSlide2 = this.currentSlide1;
+  this.showPopup = true;
+}
+
+closePopup() {
+  this.showPopup = false;
+}
+
+popnex() {
+  this.currentSlide2 =
+    (this.currentSlide2 + 1) % this.person.length;
+}
+
+popprev() {
+  this.currentSlide2 =
+    (this.currentSlide2 - 1 + this.person.length) % this.person.length;
+}
+
+
+// ======================
+// WIREFRAME SLIDER
+// ======================
 public images: string[] = [
   "assets/Desktop4.png",
   "assets/Desktop1.png",
@@ -52,104 +111,49 @@ public images: string[] = [
   "assets/fram.png",
 ];
 
-
-
-public imagedesktop: string[] = [
-
- "assets/b.png",
-  "assets/asa.png",
-"assets/bb.png",
-  "assets/bbb.png",
-  "assets/tre.png",
- "assets/tr.png",
-  "assets/res1.png",
-
-
-];
-
-public image: string[] = [
-  "assets/Deskto.png",
-
-];
-
-
-
-public mobimg: string[] = [
-
-
-
-]
-public person:string[]=[
- "assets/person.png",
- "assets/emp.png",
- "assets/Flow.png",
- "assets/reserch.png",
- "assets/ing.png",
- "assets/userin.png"
-];
-
-currentSlide1:number = 0;
-currentSlide2:number = 0;
-
-showPopup:boolean = false;
-
-
-nextSlide(){
- this.currentSlide1 =
- (this.currentSlide1 + 1) % this.person.length;
-}
-
-prevSlide(){
- this.currentSlide1 =
- (this.currentSlide1 - 1 + this.person.length)
- % this.person.length;
-}
-
-
-openPopup(){
- this.currentSlide2 = this.currentSlide1; // აი ეს აკავშირებს
- this.showPopup = true;
-}
-
-closePopup(){
- this.showPopup = false;
-}
-
-
-popnex(){
- this.currentSlide2 =
- (this.currentSlide2 + 1) % this.person.length;
-}
-
-popprev(){
- this.currentSlide2 =
- (this.currentSlide2 - 1 + this.person.length)
- % this.person.length;
-}
-
-
-
-
-
-
-
-// wiframe
-
 public currentIndex: number = 0;
 
 nextImage() {
-  this.currentIndex = (this.currentIndex + 1) % this.images.length;
-
+  this.currentIndex =
+    (this.currentIndex + 1) % this.images.length;
 }
 
 prevImage() {
   this.currentIndex =
     (this.currentIndex - 1 + this.images.length) % this.images.length;
-};
+}
 
 
-// mobile
+// ======================
+// DESKTOP SLIDER
+// ======================
+public imagedesktop: string[] = [
+  "assets/b.png",
+  "assets/asa.png",
+  "assets/bb.png",
+  "assets/bbb.png",
+  "assets/tre.png",
+  "assets/tr.png",
+  "assets/res1.png",
+];
 
+public deskindex: number = 0;
+
+desknex() {
+  this.deskindex =
+    (this.deskindex + 1) % this.imagedesktop.length;
+}
+
+deskprev() {
+  this.deskindex =
+    (this.deskindex - 1 + this.imagedesktop.length) %
+    this.imagedesktop.length;
+}
+
+
+// ======================
+// MOBILE SLIDER
+// ======================
 public imgmob: string[] = [
   "assets/six.png",
   "assets/foure.png",
@@ -157,45 +161,44 @@ public imgmob: string[] = [
   "assets/five.png",
   "assets/three.png",
   "assets/two.png",
- 
 ];
 
-// desktop
-
-
-
-
-public deskindex: number = 0;
-
-desknex() {
-  this.deskindex = (this.deskindex + 1) % this.images.length;
-
-}
-
-deskprev() {
-  this.deskindex =
-    (this.deskindex - 1 + this.images.length) % this.images.length;
-}
-
-
-
-
-
-// mobile
 public indexmob: number = 0;
 
 nexmob() {
-  this.indexmob= (this.indexmob+ 1) % this.images.length;
-
+  this.indexmob =
+    (this.indexmob + 1) % this.imgmob.length;
 }
 
 prevmob() {
   this.indexmob =
-    (this.indexmob - 1 + this.images.length) % this.images.length;
+    (this.indexmob - 1 + this.imgmob.length) %
+    this.imgmob.length;
 }
 
 
 
 
 
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
