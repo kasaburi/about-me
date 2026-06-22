@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterModule,  } from '@angular/router';
+import { RouterModule, RouterOutlet,  } from '@angular/router';
 import { TranslateModule, } from '@ngx-translate/core';
 
 
@@ -13,7 +13,7 @@ import { TranslateModule, } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-desing',
-  imports: [RouterModule,  CommonModule,TranslateModule],
+  imports: [RouterModule,  CommonModule,TranslateModule,],
   templateUrl: './desing.html',
   styleUrl: './desing.css',
 })
@@ -30,38 +30,35 @@ export class Desing {
   public img:string = 'assets/icon.png';
 
    public ice: string[] = [
-    'assets/sss.png',
-    'assets/swee.png',
-    'assets/table.png',
-    'assets/ht.png',
-    'assets/ic.png',
+    'assets/sss.webp',
+    'assets/swee.webp',
+    'assets/table.webp',
+    'assets/ht.webp',
+    'assets/ic.webp',
   
   ];
 
 
   public hotel: string[] = [
     'assets/hot.png',
-    'assets/1.png',
-    'assets/2.png',
-    'assets/book.png',
+    'assets/1.webp',
+    'assets/2.webp',
+    'assets/book.webp',
    
   ];
 
   public shoping: string[] = [
-    'assets/shop.png',
-    'assets/shopmenu.png',
-    'assets/sho.png',
-    'assets/shoping.png',
+    'assets/shop.webp',
+    'assets/shopmenu.webp',
+    'assets/sho.webp',
+    'assets/shoping.webp',
 
-  
-
-    
   ];
 
 public restoranimg:string[]=[
-   'assets/ress.png',
-   'assets/restoran.png',
-   'assets/res.png',
+   'assets/ress.webp',
+   'assets/restoran.webp',
+   'assets/res.webp',
    
 
 ];
@@ -69,7 +66,7 @@ public restoranimg:string[]=[
 
 
 
-  currentIndex1 = 0;
+currentIndex1 = 0;
 
  public Index2: number = 0;
 

@@ -36,34 +36,21 @@ langMenuOpen = false;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-public img: string = "assets/pcc.png";
-public imgs: string = "assets/desktop.png";
-public desing: string = "assets/ph1.png";
+public img: string = "assets/pcc.webp";
+public imgs: string = "assets/desktop.webp";
+public desing: string = "assets/desing.png";
 
 
 // ======================
 // PERSON SLIDER
 // ======================
 public person: string[] = [
-  "assets/person.png",
-  "assets/emp.png",
-  "assets/Flow.png",
+  "assets/person.webp",
+  "assets/emp.webp",
+  "assets/Flow.webp",
   "assets/reserch.png",
-  "assets/ing.png",
-  "assets/userin.png"
+  "assets/ing.webp",
+  "assets/userin.webp"
 ];
 
 currentSlide1: number = 0;
@@ -104,11 +91,10 @@ popprev() {
 // WIREFRAME SLIDER
 // ======================
 public images: string[] = [
-  "assets/Desktop4.png",
-  "assets/Desktop1.png",
-  "assets/Desktop3.png",
-  "assets/Frame.png",
-  "assets/fram.png",
+  "assets/Desktop4.webp",
+  "assets/Desktop1.webp",
+  "assets/Desktop3.webp",
+  "assets/fram.webp",
 ];
 
 public currentIndex: number = 0;
@@ -128,13 +114,13 @@ prevImage() {
 // DESKTOP SLIDER
 // ======================
 public imagedesktop: string[] = [
-  "assets/b.png",
-  "assets/asa.png",
-  "assets/bb.png",
-  "assets/bbb.png",
-  "assets/tre.png",
-  "assets/tr.png",
-  "assets/res1.png",
+  "assets/b.webp",
+  "assets/asa.webp",
+  "assets/bb.webp",
+  "assets/bbb.webp",
+  "assets/tre.webp",
+  "assets/tr.webp",
+  "assets/res1.webp",
 ];
 
 public deskindex: number = 0;
@@ -155,12 +141,12 @@ deskprev() {
 // MOBILE SLIDER
 // ======================
 public imgmob: string[] = [
-  "assets/six.png",
-  "assets/foure.png",
-  "assets/one.png",
-  "assets/five.png",
-  "assets/three.png",
-  "assets/two.png",
+  "assets/six.webp",
+  "assets/foure.webp",
+  "assets/one.webp",
+  "assets/five.webp",
+  "assets/three.webp",
+  "assets/two.webp",
 ];
 
 public indexmob: number = 0;

@@ -9,11 +9,11 @@
     <div class="conteiner">
         <div class="box2">
             <div class="slider">
-                <button (click)="prevSlide()" class="prevSlide"> ⬅ </button>
                 <div class="item">
+                    <button (click)="prevSlide()" class="prevSlide"> ⬅ </button>
                     <img [src]="person[currentSlide1]" alt="user persona" class="person"   (click)="openPopup()">
-                </div>
-                <button (click)="nextSlide()" class="nextSlide"> ➡</button>
+                    <button (click)="nextSlide()" class="nextSlide"> ➡</button>   
+                </div> 
             </div>
             <div class="popup" *ngIf="showPopup" (click)="closePopup()">
                 <button class="closePopup" (click)="closePopup(); $event.stopPropagation()">✖</button>
@@ -34,15 +34,13 @@
             <div class="desktop">
                 <div class="gallery1">
                     <button (click)="deskprev()" class="prevdesk">⬅</button>
-                    <img [src]="imagedesktop[deskindex]" class="imgdesk"            alt="project image"(click)="deskprev()"/>
+                    <img [src]="imagedesktop[deskindex]" class="imgdesk"      alt="project image"(click)="deskprev()"/>
                     <button (click)="desknex()" class="nexdeskt">➡</button>
                 </div>
-                <div class="mobile">
-                   <div class="gallerymob">
-                        <button (click)="prevmob()" class="prevmob">⬅</button>
-                        <img [src]="imgmob [indexmob]" class="mobimg"  alt="mobile project"(click)="prevmob()"/>
-                        <button (click)="nexmob()" class="mobnex">➡</button>
-                   </div>
+                <div class="gallerymob">
+                    <button (click)="prevmob()" class="prevmob">⬅</button>
+                    <img [src]="imgmob[indexmob]" class="mobimg"  alt="mobile project" (click)="nexmob()" />
+                    <button (click)="nexmob()" class="mobnex">➡</button>
                 </div>
             </div>
              <div class="version"> 

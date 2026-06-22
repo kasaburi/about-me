@@ -59,6 +59,14 @@ body.dark-mode {
 
 }
 
+body.dark-mode  .card-slide{
+  /* background:#000017; */
+  background: none;
+
+
+
+}
+
 body.dark-mode .conteiner2{
   background: white;
   box-shadow: 0 4px 10px rgba(66, 65, 65, 0.308);

@@ -41,8 +41,8 @@ p{
   padding: 10px;
   cursor: pointer;
   border-radius: 50%;
-  font-size: 30px;
-  width: 60px;
+  width: 45px;
+  height: 45px;
 }
 
 .prev:hover, .next:hover {
@@ -70,8 +70,8 @@ p{
   padding: 10px;
   cursor: pointer;
   border-radius: 50%;
-  font-size: 30px;
-  width: 60px;
+  width: 45px;
+  height: 45px;
 }
 
 .nav-btnprev:hover, .nav-btnnext:hover {
@@ -99,8 +99,9 @@ p{
   padding: 10px;
   cursor: pointer;
   border-radius: 50%;
-  font-size: 30px;
-  width: 60px;
+  width: 45px;
+  height: 45px;
+
 }
 
 .hotprev:hover, .hotnext:hover {
@@ -133,7 +134,6 @@ p{
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 50vw;
   min-height: 10vh;
   border-radius: 5px;
@@ -162,7 +162,6 @@ p{
 
 .proect:hover {
   transform: translateY(-5px);
-
   box-shadow:
     0 12px 30px hsla(240, 85%, 87%, 0.2),
     0 0 40px hsla(240, 100%, 81%, 0.364);
@@ -196,10 +195,8 @@ p{
   position: absolute;
   top: -50%;
   left: -150%;
-
   width: 80%;
-  height: 200%;
-
+  height: 200%; 
   background: linear-gradient(
     90deg,
     transparent,
@@ -270,18 +267,11 @@ p{
 .github2{
   width: 40px;
 }
-/* .github{
-  width: 15vw;
-  border: 2px solid red;
-  color: #3a0ca3;
-} */
 
 .sitebutton{
   display: flex;
   gap: 20px;
  
-
-
 
 }
 a{
@@ -352,10 +342,10 @@ a{
 
 .all,
 .hotel {
-     width: 40vw;
-  display: flex;
-  height: 85vh;
-      flex-direction: column;
+    width: 40vw;
+    display: flex;
+    height: 85vh;
+    flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     margin-top: 5%;
@@ -373,7 +363,7 @@ a{
   width: 40vw;
   display: flex;
   height: 85vh;
-      flex-direction: column;
+     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     margin-top: 5%;
@@ -450,7 +440,8 @@ a{
   background-color: rgba(0, 0, 0, 0.4);
   border: none;
   color: white;
-  font-size: 2rem;
+  width: 45px;
+  height: 45px;
   padding: 8px 14px;
   border-radius: 50%;
   cursor: pointer;
@@ -505,9 +496,9 @@ a{
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.4);
   border: none;
-  width: 60px;
   color: white;
-  font-size: 2rem;
+  width: 45px;
+  height: 45px;
   padding: 8px 14px;
   border-radius: 50%;
   cursor: pointer;
@@ -981,16 +972,7 @@ article{
  
 }
 
-/* 
-.all{
-  flex-direction: column;
-  justify-content:flex-start;
-  width: 90vw;
-  min-height: 65vh;
-  height: auto;
-  gap:15px;
 
-} */
 
 .ice{
 align-content: center;
@@ -1066,7 +1048,7 @@ h3{
   min-height: 63vh;
   height: auto;
   height: auto;
-gap:15px;
+  gap:15px;
 
 
 
@@ -1139,7 +1121,7 @@ gap:15px;
 .github{
   width: 80px;
   max-height: 20px;
-  /* padding: 10px; */
+
 }
 
 .site{
