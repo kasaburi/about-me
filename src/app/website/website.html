@@ -10,37 +10,37 @@
         <div class="box2">
             <div class="slider">
                 <div class="item">
-                    <button (click)="prevSlide()" class="prevSlide"> ⬅ </button>
+                    <button (click)="prevSlide()" class="prevSlide"> &#10094; </button>
                     <img [src]="person[currentSlide1]" alt="user persona" class="person"   (click)="openPopup()">
-                    <button (click)="nextSlide()" class="nextSlide"> ➡</button>   
+                    <button (click)="nextSlide()" class="nextSlide"> &#10095;</button>   
                 </div> 
             </div>
             <div class="popup" *ngIf="showPopup" (click)="closePopup()">
                 <button class="closePopup" (click)="closePopup(); $event.stopPropagation()">✖</button>
-                <button class="popprev" (click)="popprev(); $event.stopPropagation()"> ⬅ </button>
+                <button class="popprev" (click)="popprev(); $event.stopPropagation()"> &#10094; </button>
                 <img [src]="person[currentSlide2]" class="popupimg" alt="preview" (click)="$event.stopPropagation()">
-                <button class="popnex" (click)="popnex(); $event.stopPropagation()"> ➡ </button>
+                <button class="popnex" (click)="popnex(); $event.stopPropagation()"> &#10095; </button>
             </div>
             <div class="wiframe">
                 <p>wireframe</p>
                 <div class="gallery">
-                    <button (click)="prevImage()" class="prev">⬅</button>
+                    <button (click)="prevImage()" class="prev">&#10094;</button>
                     <img [src]="images[currentIndex]" class="imgwiframe"   alt="project image"(click)="nextImage()"/>
-                    <button (click)="nextImage()" class="next">➡</button>
+                    <button (click)="nextImage()" class="next">&#10095;</button>
                 </div> 
             </div>
         </div>
         <div class="borderbox">
             <div class="desktop">
                 <div class="gallery1">
-                    <button (click)="deskprev()" class="prevdesk">⬅</button>
+                    <button (click)="deskprev()" class="prevdesk">&#10094;</button>
                     <img [src]="imagedesktop[deskindex]" class="imgdesk"      alt="project image"(click)="deskprev()"/>
-                    <button (click)="desknex()" class="nexdeskt">➡</button>
+                    <button (click)="desknex()" class="nexdeskt">&#10095;</button>
                 </div>
                 <div class="gallerymob">
-                    <button (click)="prevmob()" class="prevmob">⬅</button>
+                    <button (click)="prevmob()" class="prevmob">&#10094;</button>
                     <img [src]="imgmob[indexmob]" class="mobimg"  alt="mobile project" (click)="nexmob()" />
-                    <button (click)="nexmob()" class="mobnex">➡</button>
+                    <button (click)="nexmob()" class="mobnex">&#10095;</button>
                 </div>
             </div>
              <div class="version"> 

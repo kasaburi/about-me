@@ -1,6 +1,6 @@
 <footer>
     <div class="conteiner" id="footer1">
-        <button class="navprev" (click)="prevCard()">⬅</button>
+        <button class="navprev" (click)="prevCard()">&#10094;</button>
         <div class="slider-wrapper">
             <div class="card-slide"[style.transform]="'translateX(-' + currentCard * 100 + '%)'">
                 <div class="card">
@@ -40,7 +40,7 @@
                 </div>
             </div>
         </div>
-        <button class="navnext" (click)="nextCard()">➡</button>
+        <button class="navnext" (click)="nextCard()">&#10095;</button>
     </div>
     <div class="box">
         <img [src]="kc" alt="kc"  class="kc1">

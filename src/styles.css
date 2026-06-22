@@ -125,7 +125,7 @@ body.dark-mode  .proect{
     120deg,
      hsl(240, 94%, 14%),
     #2680e1e8,
-     hsl(240, 96%, 21%)
+     hsl(240, 95%, 16%)
  
   );
 }
@@ -140,9 +140,8 @@ body.dark-mode .card,
 body.dark-mode .card1,
 body.dark-mode .card2 {
   box-shadow:
-    0 6px 16px rgba(71, 44, 170, 0.358),
-    0 0 13px rgba(12, 1, 54, 0.449);
-}
+      0 12px 25px rgba(26, 2, 131, 0.168),
+    0 0 20px rgba(40, 24, 105, 0.26);}
 
 body.dark-mode .card:hover,
 body.dark-mode .card1:hover,
@@ -150,8 +149,8 @@ body.dark-mode .card2:hover {
   transform: translateY(-8px) scale(1.02);
 
   box-shadow:
-    0 12px 25px rgba(26, 2, 131, 0.348),
-    0 0 20px rgba(40, 24, 105, 0.473);
+    0 12px 25px rgba(26, 2, 131, 0.168),
+    0 0 20px rgba(40, 24, 105, 0.26);
 }
 
 
@@ -180,7 +179,10 @@ body.dark-mode h1{
 
 
 
-
+    body.dark-mode  .slider-wrapper{
+      background-color: none !important;
+      
+    }
 body.dark-mode .conteiner2{
   background: black;
   box-shadow: 0 4px 10px rgba(66, 65, 65, 0.308);
