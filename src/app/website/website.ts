@@ -49,8 +49,8 @@ public person: string[] = [
   "assets/emp.webp",
   "assets/Flow.webp",
   "assets/reserch.png",
-  "assets/ing.webp",
-  "assets/userin.webp"
+  "assets/user.webp",
+  "assets/userperson.webp"
 ];
 
 currentSlide1: number = 0;

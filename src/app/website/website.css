@@ -86,7 +86,14 @@ main{
     background-color: white;
     border-radius: 10px;
      cursor: pointer;
+     opacity: 0,5;
     transition: .3s;
+}
+
+
+
+.person.active {
+  opacity: 1;
 }
 
 .person:hover{
@@ -214,9 +221,17 @@ ul :hover{
   cursor: pointer;
   object-fit: cover;
   border-radius: 10px;
+    opacity: 0.9;
 
 
 }
+
+.imgwiframe:active {
+  opacity: 1;
+}
+
+
+
 .imgwiframe:hover{
     transform: scale(1.03);
 }
@@ -232,16 +247,6 @@ ul :hover{
     width: 100%;
 }
 
-.imgwiframe{
-    width: 100%;
-    max-width: 700px;
-
-    height: auto;
-
-    display: block;
-
-    object-fit: contain;
-}
 
 /* ორივე ღილაკი */
 .prev,
@@ -332,9 +337,6 @@ ul :hover{
 
 
 
-.mobimg:hover{
-    transform: scale(1.03);
-}
 
 .gallerymob{
     position: relative;
@@ -350,10 +352,21 @@ ul :hover{
 
     max-width: 100%;
     height: auto;
-    display: block;
     border-radius: 20px;
+     opacity: 0.9;
+
+
 }
 
+.mobimg:active {
+  opacity: 1;
+}
+
+
+
+.mobimg:hover{
+    transform: scale(1.03);
+}
 
 
  .prevmob,
@@ -454,33 +467,21 @@ ul :hover{
 .imgdesk{
     width: 90%;
     object-fit: cover;
-    display: block;
+    opacity: 0.9;
+
+
 }
+
+.imgdesk:active {
+  opacity: 1;
+}
+
+
 .imgdesk:hover{
     transform: scale(1.03);
 }
 
 
-/* .mobile{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 90vh;
-    font-size: 24px;
-    width: 30vw;
-    text-align: center;
-} 
-
-
-.mobimg{
-    position: relative;
-    right: 150px;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-
-} */
 
 
 .popup{
@@ -857,9 +858,16 @@ p{
     }
 
 .see{
-    font-size: 24px;
+    font-size: 18px;
     max-height: 5px;
 }
+
+.see:hover{
+    font-size: 24px;
+   
+}
+
+
 
 .desing1{
     width: 270px;

@@ -14,7 +14,6 @@
     "TITLE": "Projects",
     "SINGH_TITLE": "Singh Ice Cream",
     "SINGH_DESC": "This project uses only <b>HTML and CSS</b>, includes <b>Google Fonts</b> and various animations that give the website a modern and attractive look.",
-    "SINGH_MORE": "To see the website in detail, you can click on the image or visit <b>GitHub</b>.",
      "SINGH_sertificat":"Professional certificate demonstrating my skills, continuous learning, and commitment to industry best practices",
      "SINGH_developer":"Building responsive and interactive web applications using HTML, CSS, JavaScript, and Angular with a focus on performance and user experience.",
      "SINGH_desing":" User-centered interface (UI) and user experience (UX) design through wireframes, prototypes, information architecture, and visual design development"
@@ -23,13 +22,12 @@
 
 
   "HOTEL": {
-    "DESC": "This project is a hotel booking web application built using <b>HTML, CSS</b> and <b>JavaScript</b>. The design incorporates <b>Google Fonts</b> and various animation effects. Data is retrieved from a database, allowing room filtering, booking, and detailed viewing of each room. Users can navigate hotels and book their desired room. Booked rooms are displayed on the <b>“Booked Rooms”</b> page, where they can be viewed or canceled. After authentication, the user moves from the <b>“Home”</b> page to the <b>“Hotel”</b> section, where they can fully use the system’s functionality.",
-    "MORE": "To view the website in detail, you can click on the image or visit <b>GitHub</b>."
+    "DESC": "This project is a hotel booking web application built using <b>HTML, CSS</b> and <b>JavaScript</b>. The design incorporates <b>Google Fonts</b> and various animation effects. Data is retrieved from a database, allowing room filtering, booking, and detailed viewing of each room. Users can navigate hotels and book their desired room. Booked rooms are displayed on the <b>“Booked Rooms”</b> page, where they can be viewed or canceled. After authentication, the user moves from the <b>“Home”</b> page to the <b>“Hotel”</b> section, where they can fully use the system’s functionality."
   },
 
   
   "SHOP_PROJECT": {
-    "DESC": "This project uses HTML, CSS, and Angular. Google Fonts are integrated into the project. It is an online store website where users can purchase mobile phones or laptops. To make a purchase, users are required to complete a registration process. The website also allows product filtering, and to view the detailed description of a specific product, users need to click on the product name."
+    "DESC": "This project uses HTML, CSS, and Angular. Google Fonts are integrated into the project. It is an online store website where users can purchase mobile phones or laptops. To make a purchase, users are required to complete a registration process. The website also allows product filtering."
   
 },
 
