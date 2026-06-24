@@ -80,21 +80,21 @@ main{
 .person{
     border: none;
      width: 300px;
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: .3s;
     object-fit: contain;    
     background-color: white;
     border-radius: 10px;
      cursor: pointer;
-     opacity: 0,5;
+     /* opacity: 0,5; */
     transition: .3s;
 }
 
 
 
-.person.active {
+/* .person.active {
   opacity: 1;
-}
+} */
 
 .person:hover{
  transform: scale(1.03);
@@ -218,17 +218,24 @@ ul :hover{
 {
     width: 35vw;
   height: auto;
-  cursor: pointer;
+  /* cursor: pointer; */
   object-fit: cover;
   border-radius: 10px;
-    opacity: 0.9;
+    /* opacity: 0.9; */
 
+  transition: transform 0.4s ease;
 
 }
 
+
+
+
+
+
+/* 
 .imgwiframe:active {
   opacity: 1;
-}
+} */
 
 
 
@@ -353,14 +360,13 @@ ul :hover{
     max-width: 100%;
     height: auto;
     border-radius: 20px;
-     opacity: 0.9;
+     transition: transform 0.4s ease;
 
 
 }
+ 
 
-.mobimg:active {
-  opacity: 1;
-}
+
 
 
 
@@ -467,14 +473,13 @@ ul :hover{
 .imgdesk{
     width: 90%;
     object-fit: cover;
-    opacity: 0.9;
+    transition: transform 0.4s ease;
 
 
 }
+  
 
-.imgdesk:active {
-  opacity: 1;
-}
+
 
 
 .imgdesk:hover{
@@ -495,7 +500,6 @@ ul :hover{
     justify-content:center;
     align-items:center;
     z-index:9999;
-    /* padding:20px; */
     box-sizing:border-box;
 }
 
@@ -507,6 +511,14 @@ ul :hover{
     object-fit:contain;
     border-radius:10px;
     background:white;
+     transition: transform 0.4s ease;
+}
+
+ 
+
+
+.popupimg:hover {
+  transform: scale(1.03);
 }
 
 
