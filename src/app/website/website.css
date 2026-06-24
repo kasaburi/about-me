@@ -92,9 +92,6 @@ main{
 
 
 
-/* .person.active {
-  opacity: 1;
-} */
 
 .person:hover{
  transform: scale(1.03);
@@ -186,7 +183,6 @@ ul{
 }
 
 ul a{
-    /* color: rgb(49, 8, 227); */
     text-decoration: none;
     
 }
@@ -218,24 +214,11 @@ ul :hover{
 {
     width: 35vw;
   height: auto;
-  /* cursor: pointer; */
   object-fit: cover;
   border-radius: 10px;
-    /* opacity: 0.9; */
-
   transition: transform 0.4s ease;
 
 }
-
-
-
-
-
-
-/* 
-.imgwiframe:active {
-  opacity: 1;
-} */
 
 
 
@@ -280,7 +263,7 @@ ul :hover{
     transform: translateY(-50%) scale(1.08);
 }
 
-/* პოზიციები */
+
 .prev{
     left: 15px;
 }
@@ -323,7 +306,7 @@ ul :hover{
     transform: translateY(-50%) scale(1.08);
 }
 
-/* პოზიციები */
+
 .prevdesk{
     left: 15px;
 }
@@ -781,8 +764,6 @@ p{
 
 
 .mobimg{
-    /* position: relative; 
-    left:1%; */
     height: auto;
     min-width: 250px;
 }
