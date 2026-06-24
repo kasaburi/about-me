@@ -11,7 +11,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 })
 export class Footer {
 
-  public kc:string="assets/kc.png";
+  public kc:string="assets/kc.svg";
 
 
 theme = 'light';

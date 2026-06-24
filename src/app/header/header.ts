@@ -15,7 +15,7 @@ export class Header {
 
 
 
-public kc:string="assets/kc.png";
+public kc:string="assets/kc.svg";
 
 public mobileMenu = false;
 
