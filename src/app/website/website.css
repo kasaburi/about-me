@@ -14,9 +14,10 @@ main{
     display: flex;
     flex-direction: column;
     gap:30%;
-    padding-top: 60px;
+    padding-top: 75px;
      min-height: 140vh;
      height: auto;
+
    
 }
 
