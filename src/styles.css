@@ -183,8 +183,6 @@ body.dark-mode  .proect{
   color: white;
  background: linear-gradient(160deg, 
     #13131A,#7676a4,#13131A);
- border: 2px solid red;
-  
 }
 body.dark-mode  .proect:hover{
     box-shadow:
