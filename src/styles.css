@@ -27,7 +27,7 @@ footer {
 }
 
 body {
-  background: #fffbec;
+  background: #F7F7FB;
 
 }
 
@@ -111,11 +111,11 @@ body.dark-mode .vebsaiti {
 
 
 body.dark-mode .vebsaiti:active {
-  color: rgb(149, 3, 3);
+  color: #6C5CE7;
 }
 
 body.dark-mode .mimdinare {
-  color: rgb(149, 3, 3);
+  color: #6C5CE7;
 }
 
 body.dark-mode .shoping{

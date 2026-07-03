@@ -284,7 +284,7 @@ a{
 }
 
 .site {
-  background: #2563eb;
+  background: #6C5CE7;
   color: white;
   padding: 10px 16px;
   border: none;
@@ -296,16 +296,16 @@ a{
 }
 
 .site:hover {
-  background: #1d4ed8;
+  background: #6c5ce7a3;
   transform: translateY(-1px);
 }
 
 .github {
   background: transparent;
-  color: #2563eb;
+  color: #6c5ce7a3;
   padding: 10px 16px;
   width: 130px;
-  border: 1px solid #2563eb;
+  border: 1px solid #6c5ce7a3;
   border-radius: 8px;
   cursor: pointer;
   font-weight: 500;
@@ -313,9 +313,13 @@ a{
 }
 
 .github:hover {
-  background: #c5deff;
+  background: #6c5ce724;
 }
 
+
+.desc{
+  color: rgb(95, 94, 94);
+}
 
 
 .imghotel{

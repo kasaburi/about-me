@@ -168,6 +168,7 @@ main{
 
 .bmul{
     height: 5vh;
+    color:rgb(68, 67, 67);
 }
  .wiframe{
     display: flex;
@@ -188,7 +189,7 @@ ul a{
     
 }
 li, li a{
-     color: rgb(49, 8, 227);
+     color: #6c5ce7;
      
 }
 a{
