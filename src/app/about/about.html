@@ -49,18 +49,6 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="border" id="video"> 
-        <div class="video-wrapper">
-            <video #heroVideo muted loop playsinline preload="metadata" class="hero-video">
-                <source src="assets/videos/video.mp4" type="video/mp4">
-            </video>
-            <div class="video-controls">
-                <button (click)="togglePlay(heroVideo)">  {{ heroVideo.paused ? '▶' : '❚❚' }}</button>
-                <button (click)="toggleMute(heroVideo)"> {{ heroVideo.muted ? '🔇' : '🔊' }}</button>
-                <input type="range"  min="0" max="1" step="0.01" [value]="heroVideo.volume" (input)="changeVolume(heroVideo, $event)" >
-            </div>
-        </div>'
         <div class="slider">
             <img  [src]="cer[currentSlide]" alt="Certificate" class="imgslid "/>
             <button class="prev" (click)="previousSlide()"> ❮ </button>
