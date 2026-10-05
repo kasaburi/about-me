@@ -9,15 +9,63 @@
 }
 
 
-
 app-root {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
+
+body.dark-mode app-root {
+ background: #1e213a;
+
+
+}
+
+
+
+body.dark-mode .boxfix,
+body.dark-mode .box1fix,
+body.dark-mode .boxfix p,
+body.dark-mode .fix,
+body.dark-mode  .fixabout{
+  background: #1e213a ;
+  background-color: #1e213a;
+}
+
+
+body.dark-mode .mobile-menu {
+   background: #1e213a;
+   
+}
 footer {
   margin-top: auto;
+}
+
+
+body.dark-mode .ka,
+body.dark-mode .eng
+{
+    background: #41456391 !important;
+    color: white;
+}
+ 
+
+
+
+body.dark-mode .ka:hover,
+body.dark-mode .eng:hover{
+    background-color: #1a1e38fb !important;
+}
+
+
+body.dark-mode .mobile-pages a{
+   color: rgba(255, 255, 255, 0.668);
+}
+
+
+body.dark-mode .mobile-link.mimdinare {
+    color: white;
 }
 *{
     margin: 0;
@@ -27,26 +75,83 @@ footer {
 }
 
 body {
-  background: #F7F7FB;
+  background: rgba(255, 255, 255, 0.668);
 
+}
+
+
+
+body.dark-mode .social-links a {
+   color:  rgba(255, 255, 255, 0.668) !important;
+    
 }
 
 body.dark-mode {
-  background: #0C0C12;
+  background: #1e213a;
+  /* background: #0C0C12; */
 
 }
 
 
+body.dark-mode .name,
+body.dark-mode .border,
+body.dark-mode .reserch,
+body.dark-mode #video
+
+ {
+  border: none !important;
+   background-color: #1e213a;
+   background: #1e213a !important;
+}
+
+
+
+body.dark-mode p,
+body.dark-mode .fixabout{
+  color: rgba(255, 255, 255, 0.668);
+}
+
+body.dark-mode .conteiner,
+body.dark-mode .conteiner1,
+body.dark-mode h1,
+body.dark-mode .eloratext,
+body.dark-mode .text,
+body.dark-mode .palitra,
+body.dark-mode .color,
+body.dark-mode ul,
+.body.dark-mode .div,
+.body.dark-mode .box
+
+
+{
+     background: #1e213a;
+      background-color: #1e213a;
+}
+
+
+
+
+
+.body.dark-mode .content,
+.body.dark-mode .eloratext,
+.body.dark-mode ul,
+.body.dark-mode li{
+  border: none;
+    background: #1e213a !important;
+     background-color: #1e213a;
+}
+  
 
 body.dark-mode .burger {
- color: rgb(241, 237, 228) !important;
+ color: rgba(246, 240, 240, 0.797) !important;
 
 }
 
 
 
-
-
+body.dark-mode .elora {
+ background-color: #1e213a;
+}
 
 
 
@@ -63,8 +168,10 @@ body.dark-mode .burger {
 }
 
 
-body.dark-mode  header{
-  border-bottom: 1px solid rgba(95, 94, 94, 0.525);
+body.dark-mode  .header{
+  background: #1e213a;
+  border-bottom: 1px solid rgba(166, 165, 165, 0.21);
+
 
 }
 
@@ -79,21 +186,34 @@ body.dark-mode  .card-slide{
 body.dark-mode .conteiner2{
   background: white;
   box-shadow: 0 4px 10px rgba(66, 65, 65, 0.308);
-  color: black !important;
-  border: 2px solid gray;
+  color: rgba(246, 240, 240, 0.797) ;
 }
 body.dark-mode .projects-text{
-  color: black !important;
+  color: rgba(246, 240, 240, 0.797);
 }
 
-body.dark-mode #footer1 {
-  background:none;
+body.dark-mode .box{
+    background: #1e213a;
+  border-top: 1px solid rgba(166, 165, 165, 0.21);
 
 }
+
+
+
+
+
+body.dark-mode .github:hover,
+body.dark-mode .site:hover{
+  background: #1e213a;
+}
+
+
+
+
 
 body.dark-mode .border{
  padding-left: 20px;
-   color: black;
+   color: rgba(246, 240, 240, 0.797);
    border-radius: 13px;
    
 }
@@ -101,101 +221,200 @@ body.dark-mode .border{
 
 body.dark-mode .singh{
 
-     color: white;
+     color: rgba(246, 240, 240, 0.797);
+
 
 }
 body.dark-mode .vebsaiti {
-  color: rgb(250, 247, 247);
+  color: rgba(246, 240, 240, 0.797);
+}
+
+
+body.dark-mode nav a{
+  color: rgba(246, 240, 240, 0.797);
+}
+
+body.dark-mode nav a:hover{
+  color: rgba(250, 247, 247, 0.415);
 }
 
 
 
+body.dark-mode .vebsaiti:hover{
+  color: rgba(250, 247, 247, 0.415);
+}
+
 body.dark-mode .vebsaiti:active {
-  color: #6C5CE7;
+  color: rgba(116, 169, 249, 0.751);
 }
 
 body.dark-mode .mimdinare {
-  color: #6C5CE7;
+  color: rgba(250, 247, 247, 0.751);
 }
 
 body.dark-mode .shoping{
-background: #13131A;
-     color: rgb(95, 94, 94);
+ background:#15172b;
+color: rgba(246, 240, 240, 0.797);
 
 }
 
 
 body.dark-mode .bmul{
-     color: rgb(95, 94, 94);
+   color: rgba(246, 240, 240, 0.797);
 
 }
 
 
 body.dark-mode .mobileversion{ 
- color: white;
+ color: rgba(246, 240, 240, 0.797);
 }
 
+
+body.dark-mode .figma{
+  border: 1px solid rgba(255, 255, 255, 0.096);
+  background: #2326408c;
+}
+
+body.dark-mode  .figmaic{
+    background: #2326408c;
+    border: none;
+}
+
+
+body.dark-mode .figma:hover
+{
+  background: #15172b42;
+border: 1px solid rgba(255, 255, 255, 0.096);
+}
 
 body.dark-mode .deskbox{ 
- color: white;
+ color: rgba(246, 240, 240, 0.797);
 }
 
 
-body.dark-mode .all {
-  background: #13131A;
- color: rgb(95, 94, 94) !important;
+
+
+body.dark-mode .hotel,
+body.dark-mode .kripto,
+body.dark-mode .ai,
+body.dark-mode .job,
+body.dark-mode .userconteiner1,
+body.dark-mode .userconteiner,
+body.dark-mode  .businessbox,
+body.dark-mode  .imgbox,
+body.dark-mode .elorabox,
+body.dark-mode .name,
+body.dark-mode .nameel
+
+{
+    background: #15172b;
+    color: rgba(246, 240, 240, 0.797);
 }
 
-body.dark-mode .hotel{
- background: #13131A;
-     color: rgb(95, 94, 94);
+
+body.dark-mode .border,
+body.dark-mode .all ,
+body.dark-mode .fixgeorgia,
+body.dark-mode .sitebutton{
+   background: #15172b !important;
 }
+
+body.dark-mode .box1,
+body.dark-mode .Front1,
+body.dark-mode .front{
+    color: rgba(246, 240, 240, 0.797);
+   
+}
+
+body.dark-mode .box1{
+   background: #15172b;
+   border: 1px solid rgba(255, 255, 255, 0.118);
+}
+
+body.dark-mode .li{
+    background: #15172b;
+    border: 1px solid #0e0e0f5d;
+    color: rgba(246, 240, 240, 0.797);
+}
+
 
 body.dark-mode .desc{
 
-     color: rgb(95, 94, 94);
+  color:rgba(246, 240, 240, 0.797);
 }
 
 
 body.dark-mode .restoran{
- background: #13131A;
-     color: rgb(95, 94, 94);
+ background:#15172b;
+  color: rgba(246, 240, 240, 0.797);
 }
-body.dark-mode .header{
-    color: white;
-    background: #0c0c12ef;
-    
-}
+
 
 
   body.dark-mode .eng:hover{
   background-color: #908f8532;
+ color: rgba(246, 240, 240, 0.797);
 
 }
+
 
 
   body.dark-mode .ka:hover{
   background-color: #908f8532;
+  color: rgba(246, 240, 240, 0.797);
 
+}
+
+
+  body.dark-mode .site {
+  background: #2e2764;
+  }
+
+
+
+body.dark-mode .des{
+  color: rgba(246, 240, 240, 0.797);
+}
+body.dark-mode h3,
+body.dark-mode .reserch,
+body.dark-mode .flow{
+  color: rgba(246, 240, 240, 0.797) !important;
 }
 
 body.dark-mode  .proect{
-  color: white;
- background: linear-gradient(160deg, 
-    #13131A,#7676a4,#13131A);
+  color:rgba(246, 240, 240, 0.797) !important;
+ background:#15172b;
+
 }
-body.dark-mode  .proect:hover{
-    box-shadow:
-    0 6px 16px rgba(71, 44, 170, 0.185),
-    0 0 13px rgba(12, 1, 54, 0.223);
+
+
+
+body.dark-mode .conteinerlogo p,
+body.dark-mode .company h2,
+body.dark-mode .everybox h3
+{
+  color: rgba(246, 240, 240, 0.797);
 }
+
+body.dark-mode .everybox h3,
+body.dark-mode .title { 
+  color: rgba(246, 240, 240, 0.797) !important;
+}
+
+
+
+
+
+
+
+
 
 
 body.dark-mode .card,
 body.dark-mode .card1,
 body.dark-mode .card2 {
-  background: #13131A;
-  color: rgb(95, 94, 94);
+    background:#15172b;
+  color:  rgba(246, 240, 240, 0.797) !important;
   box-shadow:
     0 0 20px rgba(12, 6, 34, 0.105);}
 
@@ -210,12 +429,123 @@ body.dark-mode .card2:hover {
 
 
 body.dark-mode h1{
-  color: black;
+  color: rgba(246, 240, 240, 0.797);
 }
 
-body.dark-mode .one{
-  color: white;
+body.dark-mode .one,
+body.dark-mode .small{
+  color: rgba(246, 240, 240, 0.797);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* elora */
+
+body.dark-mode .reserchelora{
+
+ background-color: #15172b;
+
+
+}
+
+
+
+body.dark-mode .border
+
+
+{
+   background: #15172b;
+   border: 1px solid  #15172b;;
+} 
+
+
+body.dark-mode .love,
+body.dark-mode .border p,
+body.dark-mode .love p,
+ body.dark-mode .icon{
+     background: #15172b;
+}
+
+
+
+
+
+body.dark-mode .every,
+body.dark-mode  .text1,
+body.dark-mode .interesbox,
+body.dark-mode .imgel,
+body.dark-mode .el,
+body.dark-mode  .userperson,
+body.dark-mode  .person,
+body.dark-mode  .wiframebox,
+body.dark-mode  .wiframeimg ,
+body.dark-mode  .wiframe,
+body.dark-mode  .imgbox,
+body.dark-mode  .desingel,
+body.dark-mode  .boxdesing,
+body.dark-mode  .eldes,
+body.dark-mode  .mobelora
+
+   {
+      background: #1e213a;
+      color: rgba(246, 240, 240, 0.797);
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen  and (max-width: 500px){
   body.dark-mode  .inbox{
@@ -253,3 +583,32 @@ body.dark-mode .projects-text{
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

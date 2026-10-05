@@ -2,9 +2,10 @@
   "ABOUT_ME": {
     "NAME":"Website",
     "DESIN":"Design",
+    "about":"About Me",
     "des":"Design is in the details",
     "prototyp":"To see the prototypes, you can visit the link"
-
+ 
   },
 
 
@@ -16,14 +17,16 @@
     "SINGH_DESC": "This project uses only <b>HTML and CSS</b>, includes <b>Google Fonts</b> and various animations that give the website a modern and attractive look.",
      "SINGH_sertificat":"Professional certificate demonstrating my skills, continuous learning, and commitment to industry best practices",
      "SINGH_developer":"Building responsive and interactive web applications using HTML, CSS, JavaScript, and Angular with a focus on performance and user experience.",
-     "SINGH_desing":" User-centered interface (UI) and user experience (UX) design through wireframes, prototypes, information architecture, and visual design development"
+     "SINGH_desing":" User-centered interface (UI) and user experience (UX) design through wireframes, prototypes, information architecture, and visual design development",
+      "projectsDescription": "A collection of projects bringing together different ideas, styles, and technologies in one place. Here you will find various types of websites and applications, from simple concepts to more complex projects that combine different approaches, designs, and technologies"
 
   },
 
 
-  "HOTEL": {
-    "DESC": "This project is a hotel booking web application built using <b>HTML, CSS</b> and <b>JavaScript</b>. The design incorporates <b>Google Fonts</b> and various animation effects. Data is retrieved from a database, allowing room filtering, booking, and detailed viewing of each room. Users can navigate hotels and book their desired room. Booked rooms are displayed on the <b>“Booked Rooms”</b> page, where they can be viewed or canceled. After authentication, the user moves from the <b>“Home”</b> page to the <b>“Hotel”</b> section, where they can fully use the system’s functionality."
-  },
+"HOTEL": {
+"DESC": "A hotel booking platform built with <b>HTML, CSS</b>, and <b>JavaScript</b>. I developed the backend and database myself. The platform includes hotel search, room filtering, booking, and booking management."
+},
+
 
   
   "SHOP_PROJECT": {
@@ -36,5 +39,137 @@
     "res":"The project is built using<b> HTML, CSS,</b> and <b>JavaScript</b>. It features modern animations and integrates <b>Google Fonts</b>. The website represents a restaurant platform where users can browse and purchase food. Registration is required to complete the payment process. Product filtering functionality is also available."
 
 
-}
+},
+
+
+
+  "kripto": {
+    "krip": "The project was created using the capabilities of AI to deliver a modern design and a functional web experience"
+  },
+
+
+
+  "jobs": {
+    "job": "A modern job platform created with the help of AI. I customized the design, interface, and visual style to match my own vision.The platform allows users to search and filter jobs, save positions, and submit applications, while employers can post job opportunities."
+  },
+
+  
+  "fix": {
+    "geo": "Fix Georgia is a web project developed by me, combining a modern frontend with a fully self-built backendThe project uses HTML, CSS, and Angular. I designed and developed the backend architecture and functionality myself and integrated it with the frontend to create a fast, simple, and user-friendly web experience."
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "DISCOVER": {
+    "TITLE": "Discover Georgia",
+    "PROJECT_TYPE": "<b>Project type:</b> Travel & Tourism Platform",
+    "CATEGORY": "<b>Category:</b> Web Design",
+    "TYPOGRAPHY": "<b>Typography:</b> Inter",
+    "logo": "Logo",
+    "color": "Color Palette",
+    "company": "About the Company",
+    "companyabout":"<b> Discover Georgia</b> is a digital tourism platform designed to unite specific locations, local businesses, events, and experiences across Georgia into a single digital space.We are building a modern ecosystem that connects tourists, local residents, and small businesses. The platform allows users to discover both popular and lesser-known spots, plan trips, and find new experiences.A key feature is user participation: individuals can add new locations, mark specific spots, upload photos and descriptions, and share their discoveries with others.This creates a community-driven tourism platform where people help one another uncover Georgia’s hidden gems and share them with the wider public.",
+    "person": "Target audience",
+    "user": "User",
+    "userperson": "Travelers, locals, people with disabilities, local businesses",
+    "user1": "Age",
+    "age": "20–45 years old",
+    "gender": "Gender",
+    "genderuser": "Woman/Man/Other",
+    "interes": "Interests",
+    "personinteres": "Travel and Tourism Discovering New and Hidden Places Nature, Culture, and Historical Sites Local Experiences Restaurants, Cafés, and Local Businesses Adventures and Activities Customer Recommendations and Reviews Accessible and Inclusive Tourism",
+    "object": "Goal",
+    "goal": "Making it easier to discover hidden gems in Georgia Simplifying travel planning Sharing recommendations from real users Promoting local businesses Easily finding accessible locations",
+    "problem": "Problems",
+    "geo": "Tourism in Georgia is steadily growing; however, a large proportion of tourists mainly visit only well-known destinations.As a result:",
+    "business": "1. Low visibility of small businesses",
+    "des": "Small businesses in the regions often fail to reach potential customers because information about them is scattered or non-existent.",
+    "info": "2. Lack of information for citizens",
+    "infotitle": "Local residents also often struggle to:</br> find new places for recreation; discover interesting spaces in the city; plan their free time.",
+    "place": "3. About lesser-known places",
+    "placeinfo":"Georgia offers a multitude of unique places, natural landmarks, and cultural experiences, yet discovering them is difficult for consumers.",
+    "lack": "4. Lack of accessibility information",
+    "lackof": "Information is often unavailable to persons with disabilities regarding:</br>the presence of ramps; wheelchair accessibility; adapted spaces.",
+    "new": "5. Difficulty adapting to a new environment",
+    "newplace": "People moving to a new city or neighborhood often lack information about:</br>nearby parks;  cafes; sports facilities; entertainment venues.",
+    "reserch": "Competitor research",
+    "userreserch": "User Persona"
+  },
+
+
+  "Elora": {
+    "elora": "Project Name",
+    "name": "Project type",
+    "categoryelora": "Category",
+    "eloratext": "Typography",
+    "color": "Color Palette",
+    "goalelora": " Goal Audience",
+    "inteelora": "Interests",
+    "fash": "Fashion Beauty Perfumes",
+    "eloragoal": "Goal",
+    "buy": "Easy buy",
+    "elorauser": "Age",
+    "eloraage": "20–45 age",
+    "eloragender": "Gender"
+
+    
+
+
+
+},
+
+
+
+"Fix":{
+  "fixabout":"About the Company",
+  "fixgeo":"Fix Georgia is a digital platform that enables citizens to quickly and easily report urban infrastructure issues and convey information to the relevant municipality. The platform establishes a connection between citizens and local governments, facilitating the rapid identification, monitoring, and resolution of issues",
+    "problem":"Commonly found in Georgian cities:</br> Damaged roads Malfunctioning street lighting Garbage accumulation Damaged public squares/parks Water leaks Damaged road signs Citizens often lack information on where and how to report these issues, which delays their resolution."
+},
+
+
+
+
+"Kitchen":{
+  "title":"About the site",
+  "about":"Kitchen is a restaurant website that allows users to easily browse the menu, search for a desired dish, and use filters to quickly find suitable options.",
+  "goaltitle":"Purpose of the site",
+  "goal":"The main goal of the site is to create a simple, fast and comfortable experience for the user, so that he can find the dish he wants and make a decision in the shortest possible time.",
+  "problemtitle":"Problem",
+  "problem":"Customers often struggle to quickly find the dish they want because menus offer so many choices, making it difficult to compare options. Additionally, a lack of sufficient information regarding prices, ingredients, and visual presentation complicates the decision-making process."
+},
+
+
+
+ "me": {
+    "name":"Natia Kasaburi",
+    "about": "About ME",
+    "me":"I am a Junior Front-End Developer and UI/UX Designer with both theoretical and practical knowledge in web development and digital design. In front-end development, I completed a course at IT Academy STEP, where I learned HTML, CSS, JavaScript, and Angular. I have developed several independent web projects, which are showcased in my portfolio. I use GitHub and Vercel for version control and project deployment. I have experience using AI tools in the web development and design processes. I utilize AI as an assistant to develop ideas, generate and improve code, solve problems, and accelerate my workflow.</br> Regarding UI/UX design, I completed a training program at EduCity, during which I collaborated with a team on the Create Your Digital City  project. I received a certificate upon successfully completing the program. I have several independent projects created in Figma and am capable of handling the entire design process—from user personas and user flows to wireframes and final UI designs, as well as adding interactive prototypes and animations. My primary professional focus is creating digital products that combine strong visual design, a seamless user experience, and functional front-end implementation.",
+    "skills":"Technical skills",
+    "goal":"Professional Goal",
+    "goalme":"I would like to start my career as a Junior Front-End Developer or Junior UI/UX Designer, gain experience working in a real team, and develop my professional skills."
+
+
+
+
+
+
+
+ }
+
+
+
+
 }

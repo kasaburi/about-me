@@ -12,13 +12,37 @@ import { Header } from './header/header';
 })
 export class App implements OnInit {
 
-  title = signal('aboutme');
 
-  loading = signal(true);
 
-  ngOnInit() {
-    setTimeout(() => {
-      this.loading.set(false);
-    }, 1200);
-  }
+loading = signal(true);
+
+ngOnInit() {
+
+  setTimeout(() => {
+
+    this.loading.set(false);
+
+  }, 3800);
+
 }
+
+
+
+
+
+
+
+
+
+  
+}
+
+
+
+
+
+
+
+
+
+

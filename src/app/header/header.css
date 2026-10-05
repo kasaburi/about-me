@@ -7,11 +7,9 @@
     align-items: center;
     justify-content: space-between;
     height: 10vh;
-    background: linear-gradient(
-  95deg,
-  #868fe6,
-  #fff7de
-);
+    background: rgb(231, 234, 255);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+
 }
 .inbox{
     width: 10vw;
@@ -19,19 +17,22 @@
 
 }
 
+a:hover{
+    color:  rgba(0, 0, 0, 0.303);
+}
 
 h1{
   width: 60vw;
   text-align: center;
 }
-.box{
+.boximg{
     position: absolute;
     right: 40px;
     border: none;
     border-radius: 50px;
     height: 50px;
     width: 50px;
-    background-image: url('/assets/icon.svg');
+    background-image: url('/assets/me.jpeg');
     object-fit:cover;
     background-size: cover;    
     background-position: center; 
@@ -232,20 +233,21 @@ a{
 
 .vebsaiti {
 
-  color: rgb(68, 67, 67);
+  color: rgba(0, 0, 0, 0.49);
   transition: 0.3s;
 }
 
 .mimdinare {
-  color: #6C5CE7;  
+  color: black;  
 }
 
 .page{
     display: flex;
     justify-content: center;
-    gap: 25%;
-    font-size: 18px;
+    gap: 48px;
+    font-size: 16px;
     width: 30vw;
+    
 }
 
 
@@ -253,12 +255,44 @@ a{
 
 
 
+.mobile-pages {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.mobile-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 22px;
+    font-weight: 500;
+    transition: 0.3s;
+     color: rgba(0, 0, 0, 0.547);
+}
+
+.mobile-link:hover {
+    opacity: 0.6;
+}
+
+.mobile-languages {
+    display: flex;
+    gap: 15px;
+    margin-top: 40px;
+}
 
 
+.mobile-link.mimdinare {
+    color: rgba(0, 0, 0, 0.919);
+}
 
 
-
-
+.but{
+  display: none;
+  flex-direction: row;
+  gap:32px;
+}
 
 
 
@@ -268,6 +302,12 @@ a{
 
 
 @media screen and (min-width: 901px) and (max-width: 1300px) {
+
+.page{
+  width: 40vw;
+}
+
+
 
 .desktop{
   width: 25vw;
@@ -283,23 +323,15 @@ a{
 
 @media screen and (min-width: 501px) and (max-width: 900px) {
 
-.desktop{
-  width: 40vw;
-  gap:10%;
-
-}
-}
 
 
 
 
-
-
-@media screen and (max-width: 500px) {
-    
+   
 .header{
-  justify-content:space-around;
+  justify-content:space-evenly;
   width: 100vw;
+  gap:32px;
   min-height: 10vh;
   padding: 0px;
  
@@ -315,8 +347,11 @@ a{
   background: none !important;
    background-color: none;
    background: none;
+   width: 30vw;
+   height: auto;
 }
     .burger {
+      font-size: 48px;
         display: block; 
         color:black !important
        
@@ -326,7 +361,7 @@ a{
         display: none;
     }
 
-.box{
+.boximg{
  left: 19%;
 width: 45px;
 height: 45px;
@@ -339,7 +374,8 @@ h1{
 }
 
 .kc{
-  width: 20px;
+  width: 40px;
+  height: auto;
 }
 
 
@@ -383,20 +419,144 @@ main{
 }
 
 
-.mode{  
-   border-radius: 5px;
-   width: 40vw;
+
+
+
+.page{
+  display: none;
+
+}
+
+
+
+.but{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    
+.header{
+  justify-content:space-around;
+  width: 100vw;
+  min-height: 10vh;
+  padding: 0px;
+ 
+}
+
+
+a{
+  font-size: 16px;
+}
+
+
+.inbox{
+  background: none !important;
+   background-color: none;
+   background: none;
+}
+    .burger {
+        display: block; 
+        font-size: 40px;
+        color:black !important
+       
+    }
+
+    .desktop {
+        display: none;
+    }
+
+.boximg{
+ left: 19%;
+width: 45px;
+height: 45px;
+}
+
+h1{
+  width: 30vw;
+  font-size: 16px;
+ 
+}
+
+.kc{
+  width: 20px;
+}
+
+
+.natia{
+  width: 18vw;
+  padding-left: 20px;
+  font-size: 14px;
+
+}
+main{
+  margin: 0px;
+  padding: 0px;
+  padding-top: 30%;
+}
+
+.conteiner{
+  width: 20vw;
+}
+
+.translate-btn{
+  font-size: 10px;
+  width: 70px;
+}
+
+
+.mobile-menu{
+  align-items: center;
+  width: 70%;
+}
+
+.ka{
+  width: 40vw;
   height: 6vh;
+  border-radius: 5px;
+
+}
+
+.eng{
+    width: 40vw;
+  height: 6vh;
+    border-radius: 5px;
+}
+
+
+.mode{  
+   border-radius: 100px;
+   width: 64px;
+  height: 64px;
+  border: 1px solid rgba(0, 0, 0, 0.296);
 }
 
 
 .page{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 8vh;
-    gap: 7px;
+  display: none;
 
 }
 
+
+
+.but{
+  display: flex;
+    flex-wrap: wrap;
+}
 }

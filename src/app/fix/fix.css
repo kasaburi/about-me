@@ -1,0 +1,289 @@
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    gap:64px;
+    width: 98%;
+    padding-bottom: 64px;
+    height: auto;
+}
+
+.fix{
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+}
+
+.boxfix{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+   gap:48px;
+}
+
+.fixabout{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 40vw;
+    gap:32px;
+}
+
+
+.red,
+.black,
+.orang,
+.green,
+.blue,
+.parple{
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+}
+
+.red{
+     background: #D4181C;
+    }
+.black{
+     background: black;
+      }
+.orang{
+    background: #FF8A3C;
+}
+
+.green{
+    background: #16A34A;
+}
+.blue{
+    background: #3862CE;
+}
+
+.parple{
+    background: #6A4BC7;
+}
+
+.colorbox{
+    text-align: center;
+}
+
+.text{
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 32px;
+}
+
+h2{
+    font-weight: bold;
+}
+
+
+.color{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:24px;
+}
+
+.box1fix{
+    display: flex;
+    flex-direction: column;
+    gap:32px;
+}
+
+.ilu{
+    width: 50%;
+    height: auto;
+    object-fit: fill;
+}
+
+
+.problem{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+   justify-content: center;
+   gap:48px;
+}
+
+
+.boxproblem{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+
+}
+
+
+.table{
+    width: 90%;
+    height: auto;
+    object-fit: fill;
+    border-radius: 16px;
+}
+
+
+.userbox{
+    display: flex;
+     flex-wrap: wrap;
+     gap:48px;
+    justify-content: center;
+
+     width: 100%;
+}
+
+
+.person{
+    width: 40%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 16px;
+}
+
+
+.figma{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   gap:16px;
+    border: 1px solid #f325299d;
+    width: 200px;
+    height: auto;
+    border-radius: 16px;
+    padding: 8px;
+}
+
+.figma:hover{
+ background-color: #d4181b11;
+}
+
+.figmaic{
+    width: 32px;
+}
+a{
+    font-style: normal;
+    text-decoration: none;
+    color: rgb(11, 7, 0);
+}
+
+
+
+
+
+@media  screen and (min-width: 1001px) and (max-width: 1200px){
+
+.fix{
+    width: 50%;
+    object-fit: fill;
+}
+
+.fixabout{
+    font-size: 14px;
+}
+}
+
+
+
+
+@media  screen and (min-width: 601px) and (max-width: 1000px){
+
+
+
+
+.fix{
+    width: 90%;
+    height: auto;
+}
+
+
+
+.box1fix{
+    align-items: center;
+}
+.fixabout{
+    width: 90%;
+    text-align: center;
+}
+
+
+.boxproblem{
+    width: 100%;
+    font-size: 14px;
+}
+
+
+
+.ilu{
+    width: 100%;
+}
+
+
+.color{
+    gap:8px;
+}
+
+.table{
+    width: 80%;
+    height: auto;
+}
+
+.person{
+    width: 80%;
+    height: auto;
+}
+
+}
+
+
+
+@media  screen and (max-width: 600px){
+
+
+
+
+.fix{
+    width: 90%;
+    height: auto;
+}
+
+
+
+.box1fix{
+    align-items: center;
+}
+.fixabout{
+    width: 90%;
+    text-align: center;
+}
+
+
+.boxproblem{
+    width: 100%;
+    font-size: 14px;
+}
+
+
+
+.ilu{
+    width: 100%;
+}
+
+
+.color{
+    gap:8px;
+}
+
+.table{
+    width: 100%;
+    height: auto;
+}
+
+.person{
+    width: 100%;
+    height: auto;
+}
+
+}

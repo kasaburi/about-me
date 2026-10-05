@@ -1,47 +1,4 @@
 <footer>
-    <div class="conteiner" id="footer1">
-        <button class="navprev" (click)="prevCard()">&#10094;</button>
-        <div class="slider-wrapper">
-            <div class="card-slide"[style.transform]="'translateX(-' + currentCard * 100 + '%)'">
-                <div class="card">
-                    <p class="one">Certificate Card 🏆</p>
-                    <div class="slider" (click)="changeSlide($event)">
-                        <img [src]="images[currentIndex]" class="slide-img">
-                    </div>
-                    <p class="tex">
-                    {{ 'PROJECTS.SINGH_sertificat' | translate }}
-                    </p>
-                </div>
-                <div class="card1">
-                    <p  class="one">Front-End Development📱</p>
-                    <ul class="ul">
-                        <li>Html</li>
-                        <li>css</li>
-                        <li>javascript</li>
-                        <li>angular</li>
-                    </ul>
-                    <p class="tex">
-                    {{ 'PROJECTS.SINGH_developer' | translate }}
-                    </p>
-                </div>
-                <div class="card2">
-                    <p  class="one">UI/UX Design 🎨</p>
-                    <ul id="ulid" class="ul" >
-                        <li>Figma</li>
-                        <li>Wireframing</li>
-                        <li>Prototyping</li>
-                        <li>UI Design</li>
-                        <li>Micro Interactions</li>
-                        <li>Animations</li>
-                    </ul>
-                    <p class="tex">
-                    {{ 'PROJECTS.SINGH_desing' | translate }}
-                    </p>
-                </div>
-            </div>
-        </div>
-        <button class="navnext" (click)="nextCard()">&#10095;</button>
-    </div>
     <div class="box">
         <img [src]="kc" alt="kc"  class="kc1">
         <div class="foter">
@@ -54,9 +11,6 @@
                 </a>
                 <a href="https://www.linkedin.com/in/natia-kasaburi-963009383/" target="_blank" class="LinkedIn">LinkedIn
                     <svg xmlns="http://www.w3.org/2000/svg"  class="link"viewBox="0 0 448 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#000000" d="M416 32L31.9 32C14.3 32 0 46.5 0 64.3L0 447.7C0 465.5 14.3 480 31.9 480L416 480c17.6 0 32-14.5 32-32.3l0-383.4C448 46.5 433.6 32 416 32zM135.4 416l-66.4 0 0-213.8 66.5 0 0 213.8-.1 0zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77zM384.3 416l-66.4 0 0-104c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9l0 105.8-66.4 0 0-213.8 63.7 0 0 29.2 .9 0c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9l0 117.2z"/></svg>
-                </a>
-                <a href="natiakasaburi2001w@gmail.com" target="_blank" class="gmail">gmail
-                    <svg xmlns="http://www.w3.org/2000/svg" class="mail" viewBox="0 0 512 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#000000" d="M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z"/></svg>
                 </a>
             </div>
         </div>

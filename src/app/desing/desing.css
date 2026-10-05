@@ -128,43 +128,41 @@ p{
 }
 
 
-
+.des{
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.526);
+   padding: 24px;
+   width: 70vw;
+   text-align: center;
+}
 
 .proect {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50vw;
-  min-height: 10vh;
+  width: 80vw;
+  min-height: 30vh;
+  height: auto;
   border-radius: 5px;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(
-    120deg,
-  #ddd6fa,
-  #7b93d38c,
-  #ddd6fa
- 
-  );
-
+  background:#eef3fe ;
+  border: 1px solid rgba(0, 0, 0, 0.052);
   background-size: 300% 300%;
-
   box-shadow:
     0 8px 20px hsla(240, 91%, 87%, 0.093)
-    0 0 25px hsla(240, 92%, 80%, 0.364);
-
+    0 0 25px hsla(240, 92%, 80%, 0.051);
   animation: gradientMove 8s ease infinite;
-
-  transition:
-    transform 0.4s ease,
+  transition: transform 0.4s ease,
     box-shadow 0.4s ease;
 }
 
 .proect:hover {
   transform: translateY(-5px);
   box-shadow:
-    0 12px 30px hsla(240, 85%, 87%, 0.2),
-    0 0 40px hsla(240, 100%, 81%, 0.364);
+    0 12px 30px hsla(240, 85%, 87%, 0.047),
+    0 0 40px hsla(240, 100%, 81%, 0.051);
 }
 
 .proect h3 {
@@ -219,27 +217,6 @@ p{
 
 
 
-.ice{
-    position: relative;
-    width: 100%;
-    height: 80vh;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-
-.iceimg {
-  height: auto;
-  width: 100%;
-  object-fit:cover;
-  border-radius: 20px 20px 0 0;
-  transition: transform 0.4s ease;
-}
-
-.iceimg:hover {
-  transform: scale(1.03);
-}
-
 
 
 
@@ -270,7 +247,11 @@ p{
 
 .sitebutton{
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
+  width: 100%;
+  height: auto;
+  justify-content: center;
  
 
 }
@@ -278,13 +259,10 @@ a{
   text-decoration: none;
 }
 
-.last{
-  height: 8vh;
 
-}
 
 .site {
-  background: #6C5CE7;
+  background: #8895fc;
   color: white;
   padding: 10px 16px;
   border: none;
@@ -296,16 +274,16 @@ a{
 }
 
 .site:hover {
-  background: #6c5ce7a3;
+  background: #7383fe;
   transform: translateY(-1px);
 }
 
 .github {
   background: transparent;
-  color: #6c5ce7a3;
+  color: #8895fc;
   padding: 10px 16px;
   width: 130px;
-  border: 1px solid #6c5ce7a3;
+  border: 1px solid #8895fc;
   border-radius: 8px;
   cursor: pointer;
   font-weight: 500;
@@ -313,7 +291,9 @@ a{
 }
 
 .github:hover {
-  background: #6c5ce724;
+  background: rgba(209, 213, 247, 0.93);
+  border: 1px solid #8896fc4a ;
+  color: #8895fc;
 }
 
 
@@ -322,34 +302,22 @@ a{
 }
 
 
-.imghotel{
-  position: relative;
-  width: 100%;
-  height: 80vh;
-  overflow: hidden;
- }
-
-.hotelimg{
-  height: auto;
-  width: 100%;
-  object-fit:cover;
-  border-radius: 20px 20px 0 0;
-  transition: transform 0.4s ease;
-}
-
-
-.hotelmg:hover {
-  transform: scale(1.03);
-}
 
 
 
 .all,
-.hotel {
-    width: 40vw;
+.hotel,
+.shoping,
+.restoran,
+.kripto,
+.ai,
+.job,
+.fixgeorgia{
+    width: 80vw;
     display: flex;
-    height: 85vh;
-    flex-direction: column;
+    height: 50vh;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
     margin-top: 5%;
@@ -358,27 +326,55 @@ a{
     box-shadow:   0 2px 6px rgba(0, 0, 0, 0.05),0 12px 28px rgba(0, 0, 0, 0.08);
     gap:10px;
      box-sizing: border-box;
+     border-radius: 16px;
 
 }
 
-.shoping,
-.restoran {
-   box-sizing: border-box;
+
+
+
+
+
+.ice,
+.imghotel,
+.shopimg,
+.resimg,
+.kriptoimg,
+.hot,
+.joba,
+.geo{
+    position: relative;
+    border-radius: 16px;
+    width: 40vw;
+    height: 50vh;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+
+
+.iceimg,
+.hotelimg,
+.images,
+.imgres,
+.aiimg,
+.jobimg,
+.geoimg
+{
+  height: auto;
+  border-radius: 16px;
+  border-radius: 8px;
   width: 40vw;
-  display: flex;
-  height: 85vh;
-     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 5%;
-    border-radius: 20px;
-    background:  #ffffff;
-    box-shadow:   0 2px 6px rgba(0, 0, 0, 0.05),0 12px 28px rgba(0, 0, 0, 0.08);
-    gap:10px;
-
+  object-fit:cover;
+  border-radius: 20px 20px 0 0;
+  transition: transform 0.4s ease;
 }
 
 
+
+.iceimg:hover {
+  transform: scale(1.03);
+}
 
 
 
@@ -411,16 +407,6 @@ a{
   min-height: 40vh ;
   text-align: center;
 }
-
-
- .shopimg{
-   position: relative;
-    width: 100%;
-    height: 80vh;
-    overflow: hidden;
-     border-radius: 20px 20px 0 0;
-
- }
 
 
 
@@ -465,34 +451,14 @@ a{
   right: 10px;
 }
 
-.images{
-   height: auto;
-  width: 100%;
-  object-fit:cover;
-  border-radius: 20px 20px 0 0;
-  transition: transform 0.4s ease;
-}
 
-.images:hover {
-  transform: scale(1.03);
-}
-
-
-
-/* Slide animation */
 @keyframes slideIn {
     from { transform: translateX(-100%); }
     to   { transform: translateX(0); }
 }
 
 
-.resimg{
-   position: relative;
-    width: 100%;
-    height: 80vh;
-    overflow: hidden;
-     border-radius: 20px 20px 0 0;
-}
+
 .resprev,
 .resnext {
   position: absolute;
@@ -512,19 +478,6 @@ a{
 .resprev:hover,
 .resnext:hover {
   background-color: rgba(0, 0, 0, 0.7);
-}
-
-
-.imgres{
-  height: auto;
-  width: 100%;
-  object-fit: contain;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-  transition: transform 0.4s ease;
-}
-
-.imagesres:hover {
-  transform: scale(1.03);
 }
 
 
@@ -548,7 +501,7 @@ a{
 
 
 
-@media screen and (min-width: 751px) and (max-width: 1210px){
+@media screen and (min-width: 951px) and (max-width: 1210px){
 
 
 
@@ -562,351 +515,237 @@ article{
   height: auto;
   gap:15px;
   padding: 0%;
-
+  flex-direction: row;
+  flex-wrap: wrap;
   margin: 0%;
    align-items: stretch;
 }
 
-main{
-  min-height: auto;
-    padding-top: 15%;
-}
 
 
-.all,
-.hotel {
-  width: 45vw;
-  display: flex;
-  height: 80vh;
-    justify-content: space-between;
-
-
-}
-
-.border,
-.border1 {
-  flex: 1;
-   max-height: 40vh;
-  height: auto;
-  width: 90%;
-}
-
-
-
-
-.iceimg{
-     border-radius: 0%;
-     min-height: 30vh;
-     height: auto;
-}
-
-.ice{
-  min-height: 30vh;
-  height: auto;
-
- 
-}
-
-
-
-
-.imghotel{
-   border-radius: 0%;
-     min-height: 30vh;
-     height: auto;
-}
-
-.hotelimg{
-  min-height: 30vh;
-  height: auto;
-
-
-
-}
-
-
- 
-
-.shoping,
-.restoran {
-  width: 45vw;
-  display: flex;
-  height: 80vh;
-}
-
-.border2,
-.border3 {
-    flex: 1;
-   max-height: 40vh;
-  height: auto;
-  width: 90%;
-}
-
-
-.shopimg{
-  min-height: 30vh;
-  height: auto;
-
- 
-}
-
-
-
-
-.resimg{
-  min-height: 30vh;
-  height: auto;
-
- 
-}
-
-
-
-
-.imgres{
-     border-radius: 0%;
-     min-height: 30vh;
-     height: auto;
-}
-
-
-
-
-.github{
-  width: 120px;
-  max-height: 40px;
-}
-
-
-.last{
-  justify-items: center;
-  align-content: center;
-  width: 100%;
-   gap:5px;
-  
-}
-
-.site{
-  width: 150px;
-  max-height: 40px;
- 
-}
-
-.git1{
-  width: 40vw;
-  justify-content: center;
-}
-
-
-
-
-
-}
-
-
-
-
-
-
-@media screen and (min-width: 501px) and (max-width: 750px) {
 
 
 main{
-  padding-top: 15%;
-}
+  padding-top: 10%;
+  gap:32px;
 
-.prev {
-  top: 40%;
-}
-
-.next{
-  top: 40%;
-}
-
-article{
-  max-height: 470vh;
-  margin-bottom: 40px;
-  width: 90vw;
-  height: auto;
-  align-items: center;
-  gap:1%;
-}
-
-.all,
- .hotel{
-  flex-direction: column;
-  justify-content: flex-start;
-  min-height: 65vh;
-  height: auto;
-  width: 90%;
-    gap:15px;
-    padding-bottom: 20px;
-    
-}
-
-
-.ice{
-  width: 100%;
-  max-height: 45vh;
-  height: auto;
-
-
-}
-
-.iceimg{
-  width: 100%;
-  height: auto;
-  max-height: 45vh;
-}
-
-
-.border{
-  width: 90%;
-    text-align: center;
-}
-.git1{
-justify-content: center;
-gap:2%;
-}
-
-
-
-.border1{
-  width: 90%;
-
-}
-
-.hotelimg{
-  width: 100%;
-  height: auto;
-  max-height: 45vh;
-  border-radius: 0%;
-
-}
-
-
-.imghotel{
-  width: 100%;
-  max-height: 45vh;
-  height: auto;
-  align-items: center;
-  align-content: center;
-  
-}
-
-.shopimg{
-  width: 100%;
-  max-height: 45vh;
-  height: auto;
-  align-content: center;
-
-}
-
-
-.images{
-  height: auto;
-  width: 100%;
-    border-radius: 0%;
-}
-
-
-.border2{
-  width: 90%;
-  text-align: center;
-
-}
-
-
-
-
-.restoran, .shoping{
-  flex-direction: column;
-  align-items:center;
- justify-content: flex-start; 
-   width: 90%;
-  min-height: 75vh;
-  height: auto;
-  gap:0px; 
-
-
-}
-
-
-
-
-
-
-
-
-.resimg{
-  width: 100%;
-  max-height:45vh;
-  height: auto;
-  display: flex;  
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-}
- 
-.imgres{
-   object-fit:contain;
-  max-height: 400px;
-  border-radius: 0%;
-   width: 100%;
-}
-
-.border3{
-  width: 90%;
-  max-height: 45vh;
-  text-align: center;
-}
-
-
-
-
-
-.singh{
-  max-height: 20px;
-  padding-top: 15px;
-
-}
-
-
-
-.github{
-  width: 120px;
-  max-height: 40px;
-}
-
-
-.last{
-  justify-items: center;
-  align-content: center;
-  width: 100%;
-   gap:5px;
-  
-}
-
-.site{
-  width: 150px;
-  max-height: 40px;
- 
-}
-
-.every {
-  display: grid;
-  gap: 6px;
-  margin-left: 10px;
-  margin-right: 10px;
 
 }
 
 .proect{
-  margin-top: 30px;
-  min-height: 8vh;
+  width: 90%;
+  padding: 8px;
+
+}
+
+h3{
+  font-size: 18px !important;
+}
+
+.des{
+  font-size: 14px;
+}
+
+article{
+  gap: 32px;
+  padding-bottom: 64px;
 }
 
 
+
+.all,
+.hotel,
+.shoping,
+.restoran,
+.kripto,
+.ai,
+.job,
+.fixgeorgia{
+  flex-direction: row ;
+  height: auto;
+  padding-bottom: 16px !important;
+  margin: 0;
+  width: 90%;
+  height: auto;
+  padding: 0;
+  gap:0px;
+  
+}
+
+
+.ice,
+.imghotel,
+.shopimg,
+.resimg,
+.kriptoimg,
+.hot,
+.joba,
+.geo{
+  justify-content: center;
+  width: 40%;
+  padding-left: 16px;
+  height: auto;
+}
+
+.iceimg,
+.hotelimg,
+.images,
+.imgres,
+.aiimg,
+.jobimg{
+  object-fit: fill;
+  width: 100%;
+  height: auto;
+}
+
+
+
+.border{
+  width: 30%;
+  height: auto;
+}
+.desc,
+.singh{
+
+  height: auto;
+}
+
+
+.sitebutton{
+  height: auto;
+  justify-content: center;
+  width:50vw;
+}
+
+
+.site,
+.github{
+  padding-top: 16px;
+  height: 32px;
+  width: 190px;
+}
+
+
+
+}
+
+
+
+
+
+
+@media screen and (min-width: 501px) and (max-width: 950px) {
+
+
+main{
+  padding-top: 20%;
+  gap:32px;
+
+
+}
+
+.proect{
+  width: 90%;
+  padding: 8px;
+}
+
+h3{
+  font-size: 16px !important;
+}
+
+.des{
+  font-size: 12px;
+}
+
+article{
+  gap: 32px;
+}
+
+
+
+.all,
+.hotel,
+.shoping,
+.restoran,
+.kripto,
+.ai,
+.job,
+.fixgeorgia{
+  flex-direction: column;
+  height: auto;
+  padding-bottom: 16px !important;
+  margin: 0px;
+  width: 80%;
+  height: auto;
+  padding: 0px;
+  gap:8px;
+  
+}
+
+
+.ice,
+.imghotel,
+.shopimg,
+.resimg,
+.kriptoimg,
+.hot,
+.joba,
+.geo{
+  width: 100%;;
+  height: auto;
+}
+
+.iceimg,
+.hotelimg,
+.images,
+.imgres,
+.aiimg,
+.jobimg{
+  object-fit: fill;
+  width: 100%;
+  max-height: 40vh;
+  height: auto;
+}
+
+
+
+.border{
+  width: 100%;
+  height: auto;
+}
+.desc,
+.singh{
+  width: 70vw;
+  text-align: center;
+  justify-content: center;
+  height: auto;
+}
+
+
+.sitebutton{
+  height: auto;
+  justify-content: center;
+  width:70vw
+}
+
+
+.site,
+.github{
+  padding-top: 16px;
+  height: 32px;
+  width: 190px;
+}
+
+.border1,
+.border,
+.border2,
+.border3{
+  width: 100%;
+ min-height: 10vh;
+ height: auto;
+  justify-content: flex-start;
+  gap: 24px;
+}
 
 }
 
@@ -917,237 +756,109 @@ gap:2%;
 
 
 @media screen and (max-width: 500px){
-.every {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
 
 
-}
-
-
-
-
-
-.div{
-  min-height: 125vh;
-  align-items: center;
-  justify-content: flex-end;
-
-  width: 95%;
-  gap:3%;
-  flex-direction: column-reverse;
-}
 main{
-  margin: 0px;
-  padding: 0px;
   padding-top: 30%;
-
-}
-
-.conteiner2{
-  min-width: 100%;
+  gap:32px;
 
 
 }
- 
- .img{
-  width: 180px;
-  max-height: 33vh;
 
-} 
-
-.conteiner1{
-  width: 50vw;
-  max-height: 20vh;
+.proect{
+  width: 90%;
+  padding: 8px;
 }
 
+h3{
+  font-size: 16px !important;
+}
 
-.slider{
-  min-width: 80vw;
-  max-height: 30vh;
+.des{
+  font-size: 12px;
 }
 
 article{
-  gap:40px;
-  min-height: 330vh;
-  height: auto;
-  font-size: 14px;
- 
+
+  gap: 32px;
 }
 
 
 
-.ice{
-align-content: center;
+.all,
+.hotel,
+.shoping,
+.restoran,
+.kripto,
+.ai,
+.job,
+.fixgeorgia{
+  flex-direction: column;
+  align-content: center;
+  height: auto;
+  padding-bottom: 16px !important;
+  margin: 0;
+  width: 90%;
+  height: auto;
+  padding: 0;
+  gap:8px;
+  
+}
+
+
+.ice,
+.imghotel,
+.shopimg,
+.resimg,
+.kriptoimg,
+.hot,
+.joba,
+.geo{
+  justify-items: center;
   width: 100%;
-  min-height: 25vh;
   height: auto;
-
 }
 
-.iceimg{
-width: 100%;
-object-fit: contain;
-height: auto;
-
+.iceimg,
+.hotelimg,
+.images,
+.imgres,
+.aiimg,
+.jobimg{
+  object-fit: fill;
+  width: 100%;
+  height: auto;
 }
 
 
 
 .border{
-  width: 90%;
-  text-align: center;
-  min-height: 40vh;
+  width: 85%;
   height: auto;
-  padding-bottom: 20px;
 }
-.proect{
-  width: 80vw;
-  min-height: 6vh;
-  
-}
-h3{
-  font-size: 16px;
-}
+.desc,
+.singh{
 
-
-
-.imghotel{
-  width: 100%;
-  max-height:35vh;
-  height: auto;
-  display: flex;  
-  align-items: center;
-}
-
-
-.hotelimg{
-   object-fit:contain;
-  max-height: 400px;
-  border-radius: 0%;
-   width: 100%;
-   
-
-}
-.border1{
-  width:100%;
-  max-height: 80vh;
+width: auto;
+min-width: 70vw;
   text-align: center;
-}
-
-.slide-img{
-  width: 100%;
-}
-.git1{
-  width: 80vw;
   justify-content: center;
-}
-
-.shoping{
-   flex-direction: column;
-  align-items:center;
-  justify-content: flex-start;
-  width: 95vw;
-  min-height: 63vh;
   height: auto;
+}
+
+
+.sitebutton{
   height: auto;
-  gap:15px;
-
-
-
-}
-.shopimg{
-  width: 100%;
-  max-height:35vh;
-  height: auto;
-  display: flex;  
-  align-items: center;
-
-}
- 
-.images{
-   object-fit:contain;
-  max-height: 400px;
-  border-radius: 0%;
-   width: 100%;
-
-}
-
-.border2{
-  width: 90%;
-  text-align: center;
- 
+  width: 60vw;
 }
 
 
-.border1{
-   width: 96%
-}
-
-
-
-.restoran, .hotel, .all{
-   flex-direction: column;
-  align-items:center;
-  justify-content: flex-start;
-  width: 95vw;
-  min-height: 70vh;
-  height: auto;
-  gap:15px;
-
-
-}
-
-
-.resimg{
-  width: 100%;
-  max-height:25vh;
-  height: auto;
-  display: flex;  
-  align-items: center;
-}
- 
-.imgres{
-   object-fit:contain;
-  max-height: 300px;
-  border-radius: 0%;
-   width: 100%;
-}
-
-.border3{
-  width: 90%;
-  text-align: center;
-}
-
-
-
+.site,
 .github{
-  width: 80px;
-  max-height: 20px;
-
-}
-
-.site{
-  width: 80px;
-  max-height: 20px;
- 
- 
-}
-
-.last{
- align-items: center;
- justify-items: center;
-  width: 100%;
-   gap:3px;
-  
+  padding-top: 16px;
+  height: 32px;
+  width: 200px;
 }
 
 
-
 }
-
-
-
-
-

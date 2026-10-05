@@ -1,18 +1,23 @@
 <app-header></app-header>
-<div class="page">
-  @if (loading()) {
-    <div class="skeleton-page">
-      <div class="skeleton header"></div>
-      <div class="skeleton text"></div>
-      <div class="skeleton-image">
-        <div class="card one"></div>
-        <div class="card two"></div>
-      </div>
+@if (loading()) {
+  <div class="intro">
+    <div class="grid"></div>
+    <div class="light"></div>
+    <div class="intro-content">
+      <div class="small-text"> PORTFOLIO</div>
+      <h1>
+        <span>UI/UX DESIGN</span>
+        <span>Web desing</span> 
+      </h1>
+      <div class="line"></div>
+       <p>Creative Digital Experience </p>
     </div>
-  } @else {
-    <router-outlet></router-outlet>
-  }
-</div>
+    <div class="corner top-left"> 2026</div>
+    <div class="corner top-right"> SELECTED WORK</div>
+    <div class="corner bottom-left">TBILISI / GEORGIA</div>
+    <div class="corner bottom-right">  01 — 04</div>
+  </div>} @else {
+  <router-outlet></router-outlet>}
 <app-footer></app-footer>
 
 

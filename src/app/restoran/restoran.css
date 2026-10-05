@@ -1,0 +1,195 @@
+.conteiner{
+
+    display: flex;
+    flex-direction: column;
+    gap:48px;
+    height: auto;
+    align-items: center;
+    width: 96%;
+    padding-bottom: 64px;
+   
+}
+
+
+.title{
+    font-size: 18px;
+    font-weight: bold;
+     color: white;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 16px;
+    align-items: center;
+    gap:32px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border: none;
+}
+
+
+
+.conteiner1{
+    display: flex;
+    flex-wrap: wrap;
+    gap:32px;
+    justify-content: center;
+}
+
+
+.ilus{
+    width: 80%;
+    height: auto;
+    object-fit: fill;
+    border-radius: 16px;
+}
+
+
+.content{
+    width: 35%;
+    padding: 32px;
+    height: auto;
+    background: #FF4D2E;
+     border-radius: 16px;
+
+}
+
+.about{
+    color: rgba(255, 255, 255, 0.741);
+    font-size: 14px;
+}
+
+
+
+.white,
+.black,
+.orang
+{
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+}
+
+.white{
+    border: 1px solid rgba(0, 0, 0, 0.36);
+    }
+.black{
+     background: black;
+      }
+.orang{
+    background: #FF4D2E;
+}
+
+.color{
+    display: flex;
+    gap:24px;
+}
+
+
+.colorbox{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:32px;
+}
+
+
+.text1{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.ser,
+.after{
+    width: 90%;
+    height: auto;
+    object-fit: fill;
+    border-radius: 16px;
+}
+
+
+.imgbox{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap:48px;
+    flex-wrap: wrap;
+    width: 90%;
+    height: auto;
+}
+
+
+.person{
+    width: 40%;
+    height: auto;
+    object-fit: fill;
+
+}
+
+
+.last{
+    width: 90%;
+    height: auto;
+   object-fit: fill;
+}
+
+
+.figma{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   gap:16px;
+    border: 2px solid #ff4d2e31;
+    width: 200px;
+    height: auto;
+    border-radius: 16px;
+    padding: 8px;
+}
+
+.figma:hover{
+ background-color: #ff4d2e14;
+}
+
+.figmaic{
+    width: 32px;
+}
+a{
+    font-style: normal;
+    text-decoration: none;
+    color: rgb(11, 7, 0);
+}
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+
+    .conteiner1{
+        width: 100%;
+    }
+
+
+
+.ilus{
+    width: 90%;
+    height: auto;
+}
+
+
+.content{
+    width: 70%;
+}
+
+
+.person{
+    width: 100%;
+    height: auto;
+
+}
+
+}

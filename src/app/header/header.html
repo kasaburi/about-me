@@ -13,6 +13,11 @@
                 {{ 'ABOUT_ME.DESIN' | translate }}
             </a>
         </li>
+        <li>
+            <a routerLink="/about" routerLinkActive="mimdinare" class="vebsaiti">
+                {{ 'ABOUT_ME.about' | translate }}
+            </a>
+        </li>
     </div>
     <button class="burger" (click)="toggleMenu()">☰</button>
     <div class="desktop">
@@ -20,17 +25,22 @@
             <button (click)="switchLanguage('ka')"  class="ka">KA</button>
             <button (click)="switchLanguage('eng')" class="eng">ENG</button>
         </div>
-        <button (click)="toggleDarkMode()" class="mode">
+        <button (click)="toggleDarkMode()" class="mode" id="mode">
             {{ theme === 'dark' ? '🌙' : '☀️' }}
         </button>
     </div> 
-    <div class="box"></div>
+    <div class="boximg"></div>
     <div class="mobile-menu" *ngIf="menuOpen">
         <button class="close-btn" (click)="closeMenu()">✖</button>
-        <button (click)="selectOption('ka')" id="geo" class="ka">ქართული</button>
-        <button (click)="selectOption('eng')"  id="english" class="eng">English</button>
-        <button (click)="toggleDarkMode(); closeMenu()" class="mode">
-            {{ theme === 'dark' ? '🌙' : '☀️' }}
-        </button>
+        <button (click)="toggleDarkMode(); closeMenu()" class="mode"> {{ theme === 'dark' ? '🌙' : '☀️' }} </button>
+        <div class="but">
+            <button (click)="selectOption('ka')" id="geo" class="ka">ქართული</button>
+            <button (click)="selectOption('eng')"  id="english" class="eng">English</button>
+        </div>
+         <nav class="mobile-pages">
+            <a routerLink="/"routerLinkActive="mimdinare"[routerLinkActiveOptions]="{exact:true}"  (click)="closeMenu()"class="mobile-link">  {{ 'ABOUT_ME.NAME' | translate }}</a>
+            <a routerLink="/desing"   routerLinkActive="mimdinare" (click)="closeMenu()"   class="mobile-link"> {{ 'ABOUT_ME.DESIN' | translate }} </a>
+            <a  routerLink="/about" routerLinkActive="mimdinare"  (click)="closeMenu()"  class="mobile-link"> {{ 'ABOUT_ME.about' | translate }} </a>
+        </nav>
     </div>
 </header>

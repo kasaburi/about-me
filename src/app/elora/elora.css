@@ -1,0 +1,497 @@
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:64px;
+    width: 100%;
+    min-height: 60vh;
+    height: auto;
+    padding-bottom: 64px;
+}
+
+
+.elora{
+    object-fit:fill;
+    width: 50%;
+    height: auto;
+}
+
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+
+.nameel{
+    color: rgba(0, 0, 0, 0.573);
+    margin-top: 16px;
+}
+
+
+.elorabox{
+    text-align: center;
+    padding: 16px;
+
+    background: #FDF2F5;
+    border-radius: 16px;
+    font-size: 14px;
+    width: 180px;
+    height: auto;
+
+}
+
+.conteiner1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap:24px;
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+
+.text{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.eloratext{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    gap:32px;
+}
+
+li{
+    width: 150px;
+    text-align: center;
+    height: 32px;
+    padding-top:16px ;
+    border: 1px solid #d8b4b8b7;
+    border-radius: 16px;
+    color: rgba(0, 0, 0, 0.573);
+    background: #FDF2F5;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap:32px;
+    list-style: none;
+
+}
+
+
+.black,
+.pink,
+.blue,
+.white,
+.one,      
+.two {
+    height: 32px;
+    width: 32px;
+    border-radius: 100%;
+}                     
+                   
+
+.black{
+    background-color: black;
+}
+.pink{
+    background: #C98B9B;
+}
+
+.blue{
+   background: #1379e77e; 
+}
+
+.white{
+    border: 1px solid rgba(0, 0, 0, 0.392);
+}
+
+.one{
+    background: #D9D9D9;
+}
+.two{
+    background: #d8b4b8a0;
+}
+
+.palitra{
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+    text-align: center;
+}
+
+.color{
+    display: flex;
+    flex-wrap: wrap;
+    gap:16px;
+   justify-content: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+
+
+
+.interesbox{
+    display: flex;
+    gap:24px;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+
+.icon{
+    width: 32px;
+    height: 32px;
+}
+
+
+.love{
+    display: flex;
+    align-items: center;
+    gap:8px;
+    font-weight: bold;
+    font-size: 18px;
+justify-content: center;
+color: black;
+}
+*{
+    background:  #fdf2f581;
+}
+  
+.border{
+    border: 1px solid #d8b4b89b;
+    background: #FDF2F5;
+    width: 250px;
+    padding: 16px;
+    text-align: center;
+    border-radius: 16px;
+    color: rgba(0, 0, 0, 0.485);
+
+}
+
+
+.every{
+    padding: 8px;
+    text-align: center;
+}
+
+
+.text1{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 16px;
+
+}
+
+
+
+.el{
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+}
+
+.imgel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+}
+
+.reserchelora{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     background: #FDF2F5;
+     padding: 8px;
+}
+
+
+.reserch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     background: #FDF2F5;
+     padding: 8px;
+}
+
+
+.re{
+    width: 85%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 16px;
+    
+}
+
+
+.userperson{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    gap:32px;
+   
+}
+
+.person{
+    width: 40%;
+    height: auto;
+    object-fit: fill;
+    border-radius: 16px;
+}
+
+
+.wiframeimg{
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.wiframe{
+    width: 40vw;
+    height: auto;
+    object-fit: contain;
+}
+
+.wiframebox{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
+    height: auto;
+
+
+}
+
+.imgbox{
+    display: flex;
+    flex-direction: column;
+    gap:48px;
+    width: 100%;
+    align-items: center;
+    height: auto;
+    padding-bottom: 64px;
+}
+
+
+.boxdesing{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    gap:48px;
+}
+
+.mobelora{
+    width: 170px;
+    height: auto;
+    object-fit: fill;
+}
+
+.eldes{
+    width: 30vw;
+    height: auto;
+    object-fit: fill;
+}
+
+
+.desingel{
+    width: 57%;
+       height: auto;
+    object-fit: fill;
+}
+
+
+
+.figma{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   gap:16px;
+    border: 2px solid #ff4d2e31;
+    width: 200px;
+    height: auto;
+    border-radius: 16px;
+    padding: 8px;
+}
+
+.figma:hover{
+ background-color: #ff4d2e14;
+}
+
+.figmaic{
+    width: 32px;
+}
+a{
+    font-style: normal;
+    text-decoration: none;
+    color: rgb(11, 7, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 701px) and (max-width: 1300px) {
+    
+
+.box{
+    gap:16px;
+      justify-content: center;
+   
+}
+
+.conteiner1{
+     padding-bottom: 24px;
+}
+
+
+
+.elora{
+    width: 90%;
+    height: auto;
+}
+.elorabox{
+    width: 190px;
+    min-height: 50px;
+    height: auto;
+    padding: 16px;
+}
+
+
+
+
+ul,
+.interesbox{
+
+    justify-content: center;
+
+}
+
+
+.el,
+.person,
+.wiframe{
+    width: 70%;
+    height: auto;
+}
+
+.wiframeimg{
+    justify-content: center;
+
+    gap: 32px;
+}
+
+.eldes{
+    width: 70%;
+}
+
+
+.mobelora{
+    width: 50%;
+}
+
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 700px){
+
+h1{
+    height: 30px;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+
+.conteiner{
+    gap:24px;
+}
+
+
+.box{
+    gap:16px;
+    justify-content: center;
+   
+}
+
+.conteiner1{
+     padding-bottom: 24px;
+}
+
+
+
+.elora{
+    width: 90%;
+    height: auto;
+    border: none;
+}
+.elorabox{
+    width: 190px;
+    min-height: 50px;
+    height: auto;
+    padding: 16px;
+}
+
+
+
+
+ul,
+.interesbox{
+
+    justify-content: center;
+
+}
+
+
+.el,
+.person,
+.wiframe{
+    width: 100%;
+    height: auto;
+}
+
+.wiframeimg{
+    gap: 32px;
+}
+
+.eldes{
+    width: 100%;
+}
+
+
+.mobelora{
+    width: 100%;
+}
+
+}

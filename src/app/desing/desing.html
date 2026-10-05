@@ -1,15 +1,13 @@
 <main>
     <div class="proect">
          <h3>{{ 'PROJECTS.TITLE' | translate }}</h3>
+        <p class="des">{{ 'PROJECTS.projectsDescription' | translate }}</p>
     </div> 
     <article>
         <div class="all">
             <div class="ice">
                 <button class="prev" (pointerdown)="icePrev()">&#10094;</button>
-                <img
-                    [src]="ice[iceIndex]"
-                    alt="Slide Image"
-                    class="iceimg" />
+                <img  [src]="ice[iceIndex]" alt="Slide Image"class="iceimg" />
                 <button class="next" (pointerdown)="iceNext()">&#10095;</button>
             </div>
             <div class="border">
@@ -51,29 +49,84 @@
             <div class="border2">
                 <p class="singh">Shopping</p>
                 <p [innerHTML]="'SHOP_PROJECT.DESC' | translate"   class="desc"></p>
-                <div class="last">
-                    <div class="sitebutton">
-                        <a class="site" href="https://shoping-seven-rho.vercel.app/" target="_blank" rel="noopener noreferrer">Visit site</a>
-                        <a class="github" href="https://github.com/kasaburi/shop.git" target="_blank" rel="noopener noreferrer">Visit GitHub</a>
-                    </div>
+                <div class="sitebutton">
+                    <a class="site" href="https://shoping-seven-rho.vercel.app/" target="_blank" rel="noopener noreferrer">Visit site</a>
+                    <a class="github" href="https://github.com/kasaburi/shop.git" target="_blank" rel="noopener noreferrer">Visit GitHub</a>
                 </div>
             </div>
         </div>
         <div class="restoran" id="restoran">
             <div class="resimg">
                 <button class="resprev" (pointerdown)="resPrev()">&#10094;</button>
-                <img [src]="restoranimg[Indexres]"  alt="Slide Image"
-                    class="imgres"/>
+                <img [src]="restoranimg[restoranIndex]" alt="Slide Image"   class="imgres"/>
                 <button class="resnext" (pointerdown)="resNext()">&#10095;</button>
             </div>
             <div class="border3">
                 <p class="singh">Restoran</p>
                 <p [innerHTML]="'restoran.res' | translate"   class="desc"></p>
-                <div class="last">
-                    <div class="sitebutton">
+                <div class="sitebutton">
                         <a class="site" href="https://restoran-one-bice.vercel.app/" target="_blank" rel="noopener noreferrer">Visit site</a>
                         <a class="github" href="https://github.com/kasaburi/restoran.git" target="_blank" rel="noopener noreferrer">Visit GitHub</a>
-                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="kripto" id="kripto">
+            <div class="kriptoimg">
+                <button class="resprev" (pointerdown)="criptoPrev()"> &#10094;</button>
+                <img [src]="criptoimg[criptoIndex]" alt="Slide Image"class="aiimg"/>
+                <button class="resnext" (pointerdown)="criptoNext()"> &#10095;  </button>
+            </div>
+            <div class="border3">
+                <p class="singh">Kripto</p>
+                <p [innerHTML]="'kripto.krip' | translate"   class="desc"></p>
+                <div class="sitebutton">
+                        <a class="site" href="https://kripto-gilt.vercel.app/" target="_blank" rel="noopener noreferrer">Visit site</a>
+                        <a class="github" href="https://github.com/kasaburi/kripto.git" target="_blank" rel="noopener noreferrer">Visit GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="ai" id="ai">
+            <div class="hot">
+                <button class="resprev"(pointerdown)="aiPrev()">  &#10094;</button>
+                <img [src]="aiimg[aiIndex]" alt="Slide Image" class="aiimg"/>
+                <button class="resnext"  (pointerdown)="aiNext()">  &#10095; </button>
+            </div>
+            <div class="border3">
+                <p class="singh">hotel</p>
+                <p [innerHTML]="'kripto.krip' | translate"   class="desc"></p>
+                <div class="sitebutton">
+                        <a class="site" href="https://ai-beta-peach.vercel.app/" target="_blank" rel="noopener noreferrer">Visit site</a>
+                        <a class="github" href="https://github.com/kasaburi/aihotel.git" target="_blank" rel="noopener noreferrer">Visit GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="job" id="job">
+            <div class="joba">
+                <button class="resprev" (pointerdown)="workPrev()">  &#10094;</button>
+                <img [src]="workimg[workIndex]" alt="Slide Image" class="jobimg" />
+                <button class="resnext" (pointerdown)="workNext()"></button>
+            </div>
+            <div class="border3">
+                <p class="singh">jobs</p>
+                <p [innerHTML]="'jobs.job' | translate"   class="desc"></p>
+                <div class="sitebutton">
+                        <a class="site" href="https://jobs-five-zeta.vercel.app/" target="_blank" rel="noopener noreferrer">Visit site</a>
+                        <a class="github" href="https://github.com/kasaburi/jobs.git" target="_blank" rel="noopener noreferrer">Visit GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="fixgeorgia" id="fix">
+            <div class="geo">
+                <button class="resprev" (pointerdown)="fixPrev()">&#10094;</button>
+                <img  [src]="fiximg[fixIndex]" alt="Slide Image"class="imgres" />
+                <button  class="resnext" (pointerdown)="fixNext()">  &#10095;</button>
+            </div>
+            <div class="border3">
+                <p class="singh">fix georgia</p>
+                <p [innerHTML]="'fix.geo' | translate"   class="desc"></p>
+                <div class="sitebutton">
+                    <a class="site" href="https://fix-georgia.vercel.app/" target="_blank" rel="noopener noreferrer">Visit site</a>
+                    <a class="github" href="https://github.com/kasaburi/aihotel.git" target="_blank" rel="noopener noreferrer">Visit GitHub</a>
                 </div>
             </div>
         </div>
