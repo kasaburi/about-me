@@ -516,12 +516,99 @@ body.dark-mode  .mobelora
 
  
 
+body.dark-mode .chat-message.assistant .bubble,
+body.dark-mode .kas-ai-body{
+  
+   background-color: #1e213a !important;
+   color: rgba(246, 240, 240, 0.797) !important;
+   border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+body.dark-mode .kas-ai-messages{
+background-color: #15172b;
+   color: rgba(246, 240, 240, 0.797) !important;
+   border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+body.dark-mode   .trigger-inner {
+  box-shadow: none;
+  background: transparent;
+  background-color: transparent;
+  
+
+}
 
 
 
 
 
 
+
+
+
+
+
+
+
+body.dark-mode .kas-ai-window,
+body.dark-mode .kas-ai-widget-wrapper  {
+  background: #1e213a;
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(99, 102, 241, 0.3);
+}
+
+body.dark-mode .kas-ai-body {
+  background: #141726;
+}
+
+body.dark-mode .chat-message.assistant .bubble {
+  background: #1e213a;
+  color: #e2e8f0;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+body.dark-mode .typing-bubble {
+  background: #1e213a;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+body.dark-mode .msg-avatar {
+  background: rgba(99, 102, 241, 0.25);
+  color: #a5b4fc;
+}
+
+body.dark-mode .quick-prompts-bar {
+  background: #181c2f;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+body.dark-mode .prompt-chip {
+  background: #252a45;
+  border-color: rgba(255, 255, 255, 0.12);
+  color: #cbd5e1;
+}
+
+body.dark-mode .prompt-chip:hover:not(:disabled) {
+  background: #31375c;
+  border-color: #818cf8;
+  color: #ffffff;
+}
+
+body.dark-mode .kas-ai-footer {
+  background: #1e213a;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+body.dark-mode .chat-input {
+  background: #141726;
+  border-color: #333a5c;
+  color: #f8fafc;
+}
+
+body.dark-mode .chat-input:focus {
+  border-color: #818cf8;
+  background: #181c2f;
+} 
 
 
 
@@ -584,31 +671,12 @@ body.dark-mode .projects-text{
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* KasCraft AI Widget Dark Mode List Reset */
+body.dark-mode .kas-ai-window ul,
+body.dark-mode .kas-ai-window li,
+body.dark-mode .chat-ul,
+body.dark-mode .chat-li {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+}

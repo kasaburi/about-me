@@ -13,13 +13,10 @@ export const routes: Routes = [
     path: '',
     component: Desing,
   },
-
-
   {
     path: 'about',
     component: About,
   },
-
   {
     path: 'desing',
     component: Website,
@@ -29,22 +26,18 @@ export const routes: Routes = [
         redirectTo: 'discover',
         pathMatch: 'full',
       },
-
       {
         path: 'discover',
         component: Discover,
       },
-
       {
         path: 'elora',
         component: Elora,
       },
-
       {
         path: 'restoran',
         component: Restoran,
       },
-
       {
         path: 'fix',
         component: Fix,

@@ -610,21 +610,19 @@ article{
   height: auto;
 }
 
+.sitebutton {
+  flex-wrap: wrap;
+   gap: 16px; 
+   padding: 0 8px; 
+   width: 45vw;
+  }
 
-.sitebutton{
-  height: auto;
-  justify-content: center;
-  width:50vw;
-}
 
-
-.site,
-.github{
-  padding-top: 16px;
-  height: 32px;
-  width: 190px;
-}
-
+ .site, .github {
+   padding: 10px 5px;
+    font-size: 12px; 
+      width: 200px;
+  }
 
 
 }
@@ -675,7 +673,7 @@ article{
   height: auto;
   padding-bottom: 16px !important;
   margin: 0px;
-  width: 80%;
+  width: 70vw;
   height: auto;
   padding: 0px;
   gap:8px;
@@ -693,6 +691,8 @@ article{
 .geo{
   width: 100%;;
   height: auto;
+
+
 }
 
 .iceimg,
@@ -705,39 +705,47 @@ article{
   width: 100%;
   max-height: 40vh;
   height: auto;
+
 }
 
 
 
 .border{
   width: 100%;
+  border: 1px solid rgba(151, 24, 24, 0.927);
   height: auto;
 }
 .desc,
 .singh{
-  width: 70vw;
+  width: 60vw;
   text-align: center;
   justify-content: center;
   height: auto;
 }
 
 
-.sitebutton{
+.sitebutton {
+  flex-wrap: wrap;
+   gap: 8px; 
+   padding: 0 8px; 
+   width: 60vw;
+  }
+
+
+ .site, .github {
+   padding: 10px 5px;
+    font-size: 12px; 
+      width: 200px;
+  }
+.border{
+  width: 100%;
+  min-height: 10vh;
   height: auto;
-  justify-content: center;
-  width:70vw
-}
-
-
-.site,
-.github{
-  padding-top: 16px;
-  height: 32px;
-  width: 190px;
+  justify-content: flex-start;
+  gap: 24px;
 }
 
 .border1,
-.border,
 .border2,
 .border3{
   width: 100%;
@@ -845,20 +853,20 @@ min-width: 70vw;
   justify-content: center;
   height: auto;
 }
+.sitebutton {
+  flex-wrap: wrap;
+   gap: 8px; 
+   padding: 0 8px; 
+   width: 70vw;
+  }
 
 
-.sitebutton{
-  height: auto;
-  width: 60vw;
-}
+ .site, .github {
+   padding: 10px 5px;
+    font-size: 12px; 
+      width: 200px;
+  }
 
-
-.site,
-.github{
-  padding-top: 16px;
-  height: 32px;
-  width: 200px;
-}
 
 
 }

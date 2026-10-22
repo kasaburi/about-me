@@ -1,6 +1,6 @@
 <header class="header">
     <div class="inbox">
-        <img [src]="kc" alt="kc"  class="kc">
+        <a routerLink="/"><img [src]="kc" alt="kc" class="kc"></a>
     </div>
     <div class="page">
         <li>
@@ -19,28 +19,75 @@
             </a>
         </li>
     </div>
-    <button class="burger" (click)="toggleMenu()">☰</button>
+    <button class="burger" (click)="toggleMenu()" aria-label="Toggle navigation menu">☰</button>
     <div class="desktop">
-        <div class="lang">
-            <button (click)="switchLanguage('ka')"  class="ka">KA</button>
-            <button (click)="switchLanguage('eng')" class="eng">ENG</button>
+        <div class="header-controls">
+            <button class="lang-pill-btn" type="button"   (click)="toggleLanguage()"  [attr.aria-label]="currentLanguage === 'ka' ? 'Switch to English' : 'გადართვა ქართულზე'" [title]="currentLanguage === 'ka' ? 'Switch to English (ENG)' : 'გადართვა ქართულზე (KA)'" >
+                <svg class="globe-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+                    <path d="M2 12h20"/>
+                </svg>
+                <span class="lang-text" [class.animating]="isLangFlipping"> {{ currentLanguage === 'ka' ? 'KA' : 'ENG' }}  </span>
+                <span class="active-indicator" [class.eng]="currentLanguage === 'eng'"></span>
+            </button>
+            <button class="theme-pill-btn" type="button" (click)="toggleDarkMode()"[attr.aria-label]="theme === 'dark' ? 'დღის რეჟიმზე გადართვა' : 'ღამის რეჟიმზე გადართვა'"
+                [title]="theme === 'dark' ? 'Light Mode (დღის რეჟიმი)' : 'Dark Mode (ღამის რეჟიმი)'" id="mode" >
+                @if (theme === 'dark') {
+                <svg class="theme-svg moon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" fill="currentColor" fill-opacity="0.25"/>
+                    <path d="M19 3v4"/>
+                    <path d="M21 5h-4"/>
+                </svg> } @else {
+                <svg class="theme-svg sun-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="4" fill="currentColor" fill-opacity="0.2"/>
+                    <path d="M12 2v2"/>
+                    <path d="M12 20v2"/>
+                    <path d="m4.93 4.93 1.41 1.41"/>
+                    <path d="m17.66 17.66 1.41 1.41"/>
+                    <path d="M2 12h2"/>
+                    <path d="M20 12h2"/>
+                    <path d="m6.34 17.66-1.41 1.41"/>
+                    <path d="m19.07 4.93-1.41 1.41"/>
+                </svg>}
+            </button>
         </div>
-        <button (click)="toggleDarkMode()" class="mode" id="mode">
-            {{ theme === 'dark' ? '🌙' : '☀️' }}
-        </button>
     </div> 
-    <div class="boximg"></div>
+    <div class="boximg" title="Natia Kasaburi"></div>
     <div class="mobile-menu" *ngIf="menuOpen">
-        <button class="close-btn" (click)="closeMenu()">✖</button>
-        <button (click)="toggleDarkMode(); closeMenu()" class="mode"> {{ theme === 'dark' ? '🌙' : '☀️' }} </button>
-        <div class="but">
-            <button (click)="selectOption('ka')" id="geo" class="ka">ქართული</button>
-            <button (click)="selectOption('eng')"  id="english" class="eng">English</button>
+        <button class="close-btn" (click)="closeMenu()" aria-label="Close menu">✖</button>
+        <div class="mobile-actions-bar">
+            <button class="lang-pill-btn mobile-action" type="button"(click)="toggleLanguage()"
+                [attr.aria-label]="currentLanguage === 'ka' ? 'Switch to English' : 'გადართვა ქართულზე'"  >
+                <svg class="globe-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+                    <path d="M2 12h20"/>
+                </svg>
+                <span class="lang-text" [class.animating]="isLangFlipping">
+                    {{ currentLanguage === 'ka' ? 'ქართული (KA)' : 'English (ENG)' }}
+                </span>
+                <span class="active-indicator" [class.eng]="currentLanguage === 'eng'"></span>
+            </button>
+            <button class="theme-pill-btn mobile-action"  type="button"   (click)="toggleDarkMode()"  [attr.aria-label]="theme === 'dark' ? 'Light Mode' : 'Dark Mode'" >
+                @if (theme === 'dark') {
+                <svg class="theme-svg moon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" fill="currentColor" fill-opacity="0.25"/>
+                    <path d="M19 3v4"/>
+                    <path d="M21 5h-4"/>
+                </svg>
+                <span class="mobile-theme-text">Dark</span>} @else {
+                <svg class="theme-svg sun-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="4" fill="currentColor" fill-opacity="0.2"/>
+                    <path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/>
+                </svg>
+                <span class="mobile-theme-text">Light</span>  }
+            </button>
         </div>
-         <nav class="mobile-pages">
-            <a routerLink="/"routerLinkActive="mimdinare"[routerLinkActiveOptions]="{exact:true}"  (click)="closeMenu()"class="mobile-link">  {{ 'ABOUT_ME.NAME' | translate }}</a>
-            <a routerLink="/desing"   routerLinkActive="mimdinare" (click)="closeMenu()"   class="mobile-link"> {{ 'ABOUT_ME.DESIN' | translate }} </a>
-            <a  routerLink="/about" routerLinkActive="mimdinare"  (click)="closeMenu()"  class="mobile-link"> {{ 'ABOUT_ME.about' | translate }} </a>
+        <nav class="mobile-pages">
+            <a routerLink="/" routerLinkActive="mimdinare" [routerLinkActiveOptions]="{exact:true}" (click)="closeMenu()" class="mobile-link"> {{ 'ABOUT_ME.NAME' | translate }}</a>
+            <a routerLink="/desing" routerLinkActive="mimdinare" (click)="closeMenu()" class="mobile-link"> {{ 'ABOUT_ME.DESIN' | translate }} </a>
+            <a routerLink="/about" routerLinkActive="mimdinare" (click)="closeMenu()" class="mobile-link"> {{ 'ABOUT_ME.about' | translate }} </a>
         </nav>
     </div>
 </header>
