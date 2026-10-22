@@ -338,7 +338,7 @@ CONVERSATIONAL BEHAVIOR & RULES
       'როგორ ხარ', 'რას შვრები', 'როგორ მიდის', 'rogor xar', 'ras shvrebi', 'how are you', 'how is it going'
     ])) {
       return isKa
-        ? 'დიდი მადლობა, შესანიშნავად! მზად ვარ გაგაცნოთ ნათია ყასაბურის ნამუშევრები და პროფესიული გამოცდილება. რის შესახებ გსურთ გაგება — **პროექტების**, **დიზაინის** თუ **ტექნოლოგიების**?'
+        ? 'დიდი მადლობა, შესანიშნავად! მზად ვარ გაგაცნოთ ნათიას ნამუშევრები და პროფესიული გამოცდილება. რის შესახებ გსურთ გაგება — **პროექტების**, **დიზაინის** თუ **ტექნოლოგიების**?'
         : 'Thank you, I\'m doing great! Ready to guide you through Natia Kasaburi\'s creative work and technical experience. What would you like to explore — her **projects**, **UI/UX design**, or **tech stack**?';
     }
 
