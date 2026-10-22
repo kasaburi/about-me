@@ -668,7 +668,7 @@ Interested in a specific one? Ask me, for example: *"Tell me about Elora"* or *"
 ⚡ **Front-End Development:**
 • **Angular** (v20+, Standalone Components, Signals, RxJS, Declarative Routing)
 • **TypeScript** & Modern **JavaScript (ES6+)**
-• **HTML5 & CSS3/SCSS** (Flexbox, CSS Grid, Responsive Web Design, Animations)
+• **HTML5 & CSS3* (Flexbox, CSS Grid, Responsive Web Design, Animations)
 • **REST API** ინტეგრაცია და მონაცემთა მართვა
 
 🎨 **UI/UX Design:**
@@ -681,7 +681,7 @@ Interested in a specific one? Ask me, for example: *"Tell me about Elora"* or *"
 ⚡ **Front-End Development:**
 • **Angular** (v20+, Standalone Components, Signals, RxJS, Declarative Routing)
 • **TypeScript** & Modern **JavaScript (ES6+)**
-• **HTML5 & CSS3/SCSS** (Flexbox, CSS Grid, Mobile-First Responsive Design)
+• **HTML5 & CSS** (Flexbox, CSS Grid, Mobile-First Responsive Design)
 • **REST API** Integration and state management
 
 🎨 **UI/UX Design:**
@@ -720,7 +720,7 @@ Feel free to connect regarding job opportunities, freelance work, or project inq
     if (this.matchesAny(combined, ['ვინ არის', 'ნათია', 'ჩემს შესახებ', 'who is', 'about natia', 'kascraft', 'visia'])) {
       this.lastTopic = 'general_bio';
       return isKa
-        ? `👋 **ნათია ყასაბური — Front-End Developer & UI/UX Designer**
+        ? `👋 **ნათია კასაბური — Front-End Developer & UI/UX Designer**
 
 ნათია არის დამწყები დეველოპერი და დიზაინერი თბილისიდან. მას გავლილი აქვს **IT Academy STEP** (Front-End) და **EduCity** (UI/UX) გადამზადების პროგრამები.
 
