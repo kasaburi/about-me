@@ -344,7 +344,7 @@ CONVERSATIONAL BEHAVIOR & RULES
 
     // 3. Compliments & Gratitude
     if (this.matchesAny(combined, [
-      'მადლობა', 'დიდი მადლობა', 'გმადლობ', 'ყოჩაღ', 'მაგარია', 'კარგია', 'მომეწონა', 'ლამაზია',
+      'მადლობა', 'დიდი მადლობა', 'გმადლობ',  'საინტერესოა',' ყოჩაღ', 'მაგარია', 'კარგია', 'მომეწონა', 'ლამაზია',
       'madloba', 'didi madloba', 'magaria', 'kargia', 'thanks', 'thank you', 'awesome', 'great', 'cool', 'nice work'
     ])) {
       return isKa
@@ -363,7 +363,7 @@ CONVERSATIONAL BEHAVIOR & RULES
 
     // 5. Specific Projects Deep-Dives
     // Discover Georgia
-    if (this.matchesAny(combined, ['discover', 'აღმოაჩინე საქართველო', 'ტურიზმ', 'მოგზაურობ', 'agmoachine', 'tourism'])) {
+    if (this.matchesAny(combined, ['discover', 'აღმოაჩინე საქართველო', 'ტურიზმი', 'მოგზაურობ', 'agmoachine', 'tourism'])) {
       this.lastTopic = 'project_discover_georgia';
       this.lastProject = 'Discover Georgia';
       return isKa
@@ -409,7 +409,7 @@ Explore the case study in the **Design** section!`;
     }
 
     // Fix Georgia (GeorgiaFix)
-    if (this.matchesAny(combined, ['fix', 'ფიქს', 'ფიქს ჯორჯია', 'გზები', 'მუნიციპალიტეტ', 'urban', 'infrastructure'])) {
+    if (this.matchesAny(combined, ['fix', 'ფიქს', 'ფიქს ჯორჯია', 'გზები', 'მუნიციპალიტეტი', 'urban', 'infrastructure'])) {
       this.lastTopic = 'project_fix_georgia';
       this.lastProject = 'Fix Georgia';
       return isKa
@@ -539,20 +539,20 @@ Explore the case study in the **Design** section!`;
 
     // 7. Education, Courses & Training
     if (this.matchesAny(combined, [
-      'სწავლ', 'განათლებ', 'კურს', 'სერტიფიკატ', 'სად ისწავლა', 'step', 'educity',
+      'სწავლა', 'განათლება', 'კურსი', 'სერთიფიკატი', 'სად ისწავლა', 'step', 'educity',
       'education', 'courses', 'certificates', 'study', 'learned', 'university'
     ])) {
       this.lastTopic = 'education';
       return isKa
-        ? `🎓 **ნათია ყასაბურის განათლება და კურსები:**
+        ? `🎓 **ნათია კასაბურის განათლება და კურსები:**
 
 1. 💻 **IT Academy STEP (Front-End Development):**
-   - შეისწავლა HTML5, CSS3, JavaScript (ES6+) და Angular.
+   - შეისწავლა HTML5, CSS3, JavaScript (ES6+),TypeScript და Angular.
    - დაეუფლა რესპონსიულ დეველოპმენტს, ვებ-სტანდარტებსა და პრაქტიკულ პროექტებზე მუშაობას.
 
 2. 🎨 **EduCity (UI/UX Design):**
    - წარმატებით გაიარა UI/UX გადამზადების პროგრამა.
-   - გუნდთან ერთად იმუშავა პროექტზე „შექმენი შენი ციფრული ქალაქი“ და მიიღო პროფესიული სერტიფიკატი.
+   - გუნდთან ერთად იმუშავა Discover Georgia პროექტზე „შექმენი შენი ციფრული ქალაქი“ და მიიღო პროფესიული სერტიფიკატი.
    - დაეუფლა User Persona-ს, User Flow-ს, Wireframe-ებსა და Figma-ში ინტერაქტიულ პროტოტიპირებას.
 
 3. 🤖 **AI Workflow Integration:**
@@ -573,7 +573,7 @@ Explore the case study in the **Design** section!`;
 
     // 8. Career Goals & Hiring Opportunities
     if (this.matchesAny(combined, [
-      'ვაკანსი', 'სამსახურ', 'მუშაობ', 'ფრილანს', 'სტაჟირებ', 'ჰაირ', 'შეთავაზებ',
+      'ვაკანსია', 'სამსახური', 'მუშაობა', 'ფრილანსერი', 'სტაჟირება', 'ჰაირ', 'შეთავაზება',
       'job', 'hire', 'career', 'freelance', 'internship', 'open to work', 'available', 'opportunity'
     ])) {
       this.lastTopic = 'career_goal';
@@ -598,11 +598,11 @@ Get in touch directly at **natiakasaburi2001w@gmail.com** or via [LinkedIn](http
 
     // 9. All Projects Overview
     if (this.matchesAny(combined, [
-      'პროექტ', 'ნამუშევარ', 'ყველა პროექტი', 'რა გააკეთა', 'portfolio', 'projects', 'works', 'case studies', 'proeqtebi'
+      'პროექტი', 'ნამუშევარი', 'ყველა პროექტი', 'რა გააკეთა', 'portfolio', 'projects', 'works', 'case studies', 'proeqtebi'
     ])) {
       this.lastTopic = 'all_projects';
       return isKa
-        ? `🚀 **ნათია ყასაბურის პორტფოლიოს პროექტები:**
+        ? `🚀 **ნათია კასაბურის პორტფოლიოს პროექტები:**
 
 🎨 **UI/UX Case Studies:**
 1. **Discover Georgia (აღმოაჩინე საქართველო)** — ტურიზმისა და ინკლუზიური მოგზაურობის პლატფორმა.
@@ -658,12 +658,12 @@ Interested in a specific one? Ask me, for example: *"Tell me about Elora"* or *"
 
     // 11. Front-End & Tech Stack Skills
     if (this.matchesAny(combined, [
-      'ტექნოლოგი', 'უნარ', 'სტეკ', 'სკილ', 'ფრონტენდ', 'angular', 'typescript', 'javascript', 'html', 'css',
+      'ტექნოლოგია', 'უნარი', 'სტეკ', 'სკილ', 'ფრონტენდი', 'angular', 'typescript', 'javascript', 'html', 'css',
       'skills', 'tech', 'stack', 'frontend', 'developer'
     ])) {
       this.lastTopic = 'skills_frontend';
       return isKa
-        ? `💻 **ნათია ყასაბურის ტექნოლოგიური სტეკი:**
+        ? `💻 **ნათია კასაბურის ტექნოლოგიური სტეკი:**
 
 ⚡ **Front-End Development:**
 • **Angular** (v20+, Standalone Components, Signals, RxJS, Declarative Routing)
@@ -693,12 +693,12 @@ Interested in a specific one? Ask me, for example: *"Tell me about Elora"* or *"
 
     // 12. Contact Details & Social Links
     if (this.matchesAny(combined, [
-      'კონტაქტ', 'მეილ', 'დაკავშირ', 'დაუკავშირ', 'დავუკავშირ', 'სად არის', 'თბილის', 'სოციალურ',
+      'კონტაქტი', 'მეილი', 'დაკავშირება', 'დაუკავშირდეთ', 'დავუკავშირდი', 'სად არის', 'თბილის', 'სოციალურ',
       'contact', 'email', 'linkedin', 'github', 'reach', 'location', 'daukavshir', 'davkavshir', 'kontaqt', 'dakavshir'
     ])) {
       this.lastTopic = 'contact';
       return isKa
-        ? `📬 **როგორ დაუკავშირდეთ ნათია ყასაბურს:**
+        ? `📬 **როგორ დაუკავშირდეთ ნათია კასაბურს:**
 
 • ✉️ **Email:** [natiakasaburi2001w@gmail.com](mailto:natiakasaburi2001w@gmail.com)
 • 💼 **LinkedIn:** [Natia Kasaburi](https://www.linkedin.com/in/natia-kasaburi-963009383/)
