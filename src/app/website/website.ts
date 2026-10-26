@@ -1,43 +1,32 @@
 import { CommonModule } from '@angular/common';
-import { Component,  } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-website',
-  imports: [RouterModule,TranslateModule,CommonModule,],
+  standalone: true,
+  imports: [RouterModule, TranslateModule, CommonModule],
   templateUrl: './website.html',
   styleUrl: './website.css',
 })
 export class Website {
-  
+  currentSlide = 0;
+  theme = 'light';
+  selectedLanguage: string = 'ka';
+  langMenuOpen = false;
 
-currentSlide = 0;
+  public desing: string = 'assets/desing.png';
 
+  constructor(private translate: TranslateService) {
+    this.selectedLanguage = this.translate.currentLang || this.translate.defaultLang || 'ka';
+    this.translate.onLangChange.subscribe((event) => {
+      this.selectedLanguage = event.lang;
+    });
+  }
 
-theme = 'light';
-selectedLanguage: string = "ka";
-
-
-constructor(private translate: TranslateService) {
-  this.translate.setDefaultLang(this.selectedLanguage)}
-
-
-
-switchLanguage(language: string) {
-  this.translate.use(language);
-   this.langMenuOpen = false;
-}
-
-langMenuOpen = false;
-
-
-
-
-
-
-
-public desing: string = "assets/desing.png";
-
-
+  switchLanguage(language: string) {
+    this.translate.use(language);
+    this.langMenuOpen = false;
+  }
 }

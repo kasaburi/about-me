@@ -1,25 +1,17 @@
 import { Routes } from '@angular/router';
 
-import { Desing } from './desing/desing';
-import { Website } from './website/website';
-import { Discover } from './discover/discover';
-import { Elora } from './elora/elora';
-import { Restoran } from './restoran/restoran';
-import { Fix } from './fix/fix';
-import { About } from './about/about';
-
 export const routes: Routes = [
   {
     path: '',
-    component: Desing,
+    loadComponent: () => import('./desing/desing').then(m => m.Desing),
   },
   {
     path: 'about',
-    component: About,
+    loadComponent: () => import('./about/about').then(m => m.About),
   },
   {
     path: 'desing',
-    component: Website,
+    loadComponent: () => import('./website/website').then(m => m.Website),
     children: [
       {
         path: '',
@@ -28,19 +20,19 @@ export const routes: Routes = [
       },
       {
         path: 'discover',
-        component: Discover,
+        loadComponent: () => import('./discover/discover').then(m => m.Discover),
       },
       {
         path: 'elora',
-        component: Elora,
+        loadComponent: () => import('./elora/elora').then(m => m.Elora),
       },
       {
         path: 'restoran',
-        component: Restoran,
+        loadComponent: () => import('./restoran/restoran').then(m => m.Restoran),
       },
       {
         path: 'fix',
-        component: Fix,
+        loadComponent: () => import('./fix/fix').then(m => m.Fix),
       },
     ],
   },

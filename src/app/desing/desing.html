@@ -7,7 +7,7 @@
         <div class="all">
             <div class="ice">
                 <button class="prev" (pointerdown)="icePrev()">&#10094;</button>
-                <img  [src]="ice[iceIndex]" alt="Slide Image"class="iceimg" />
+                <img [src]="ice[iceIndex]" alt="Slide Image" class="iceimg" fetchpriority="high" decoding="async" />
                 <button class="next" (pointerdown)="iceNext()">&#10095;</button>
             </div>
             <div class="border1">
@@ -24,8 +24,7 @@
         <div class="hotel">
             <div class="imghotel">
                 <button class="hotprev" (pointerdown)="hotelPrev()">&#10094;</button>
-                <img [src]="hotel[hotelIndex]"  alt="Slide Image"
-                    class="hotelimg" />
+                <img [src]="hotel[hotelIndex]" alt="Slide Image" class="hotelimg" loading="lazy" decoding="async" />
                 <button class="hotnext" (pointerdown)="hotelNext()">&#10095;</button>
             </div>
             <div class="border1">
@@ -42,8 +41,7 @@
         <div class="shoping">
             <div class="shopimg">
                 <button class="nav-btnprev" (pointerdown)="prev1()">&#10094;</button>
-                <img [src]="shoping[currentIndex1]" alt="Slide Image"
-                    class="images"  />
+                <img [src]="shoping[currentIndex1]" alt="Slide Image" class="images" loading="lazy" decoding="async" />
                 <button class="nav-btnnext" (pointerdown)="next1()">&#10095;</button>
             </div>
             <div class="border2">
@@ -58,7 +56,7 @@
         <div class="restoran" id="restoran">
             <div class="resimg">
                 <button class="resprev" (pointerdown)="resPrev()">&#10094;</button>
-                <img [src]="restoranimg[restoranIndex]" alt="Slide Image"   class="imgres"/>
+                <img [src]="restoranimg[restoranIndex]" alt="Slide Image" class="imgres" loading="lazy" decoding="async" />
                 <button class="resnext" (pointerdown)="resNext()">&#10095;</button>
             </div>
             <div class="border3">
@@ -73,7 +71,7 @@
         <div class="kripto" id="kripto">
             <div class="kriptoimg">
                 <button class="resprev" (pointerdown)="criptoPrev()"> &#10094;</button>
-                <img [src]="criptoimg[criptoIndex]" alt="Slide Image"class="aiimg"/>
+                <img [src]="criptoimg[criptoIndex]" alt="Slide Image" class="aiimg" loading="lazy" decoding="async" />
                 <button class="resnext" (pointerdown)="criptoNext()"> &#10095;  </button>
             </div>
             <div class="border3">
@@ -88,7 +86,7 @@
         <div class="ai" id="ai">
             <div class="hot">
                 <button class="resprev"(pointerdown)="aiPrev()">  &#10094;</button>
-                <img [src]="aiimg[aiIndex]" alt="Slide Image" class="aiimg"/>
+                <img [src]="aiimg[aiIndex]" alt="Slide Image" class="aiimg" loading="lazy" decoding="async" />
                 <button class="resnext"  (pointerdown)="aiNext()">  &#10095; </button>
             </div>
             <div class="border3">
@@ -103,7 +101,7 @@
         <div class="job" id="job">
             <div class="joba">
                 <button class="resprev" (pointerdown)="workPrev()">  &#10094;</button>
-                <img [src]="workimg[workIndex]" alt="Slide Image" class="jobimg" />
+                <img [src]="workimg[workIndex]" alt="Slide Image" class="jobimg" loading="lazy" decoding="async" />
                 <button class="resnext" (pointerdown)="workNext()"></button>
             </div>
             <div class="border3">
@@ -118,8 +116,8 @@
         <div class="fixgeorgia" id="fix">
             <div class="geo">
                 <button class="resprev" (pointerdown)="fixPrev()">&#10094;</button>
-                <img  [src]="fiximg[fixIndex]" alt="Slide Image"class="imgres" />
-                <button  class="resnext" (pointerdown)="fixNext()">  &#10095;</button>
+                <img [src]="fiximg[fixIndex]" alt="Slide Image" class="imgres" loading="lazy" decoding="async" />
+                <button class="resnext" (pointerdown)="fixNext()">  &#10095;</button>
             </div>
             <div class="border3">
                 <p class="singh">fix georgia</p>
