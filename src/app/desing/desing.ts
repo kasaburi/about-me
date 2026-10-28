@@ -210,12 +210,11 @@ export class Desing {
 
   // FIX GEORGIA
   public fiximg: string[] = [
-    'assets/fix.png',
     'assets/fix1.png',
     'assets/fix2.png'
   ];
   public fiximgWebp: string[] = [
-    'assets/fix.webp',
+
     'assets/fix1.webp',
     'assets/fix2.webp'
   ];

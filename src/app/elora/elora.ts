@@ -13,22 +13,22 @@ export class Elora {
 
 
 
-public elora: string = "assets/elo.svg";
-public el: string = "assets/el.svg";
-public re: string = "assets/re.svg";
+public elora: string = "assets/elo.webp";
+public el: string = "assets/el.webp";
+public re: string = "assets/re.webp";
 
-public person: string = "assets/eloraperson.svg";
-public person1: string = "assets/eloraperson1.svg";
-public auth: string = "assets/auth.svg";
-public registre: string = "assets/registre.svg";
+public person: string = "assets/eloraperson.webp";
+public person1: string = "assets/eloraperson1.webp";
+public auth: string = "assets/auth.webp";
+public registre: string = "assets/registre.webp";
 public elorawiframe: string = "assets/wiframe.png";
 public elorawiframeWebp: string = "assets/wiframe.webp";
-public deswif: string = "assets/deswif.svg";
+public deswif: string = "assets/wiframe.png";
 
-public desingel: string = "assets/desingel.svg";
-public eldes: string = "assets/eldes.svg";
-public mobelora: string = "assets/mobelora.svg";
-public dashbord: string = "assets/dashbord.svg";
+public desingel: string = "assets/desingel.webp";
+public eldes: string = "assets/eldes.png";
+public mobelora: string = "assets/mobelora.png";
+public dashbord: string = "assets/dashbord.webp";
 
 
 }

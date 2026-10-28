@@ -12,11 +12,11 @@ import { TranslateModule } from '@ngx-translate/core';
 export class Restoran {
 public ilus: string = "assets/ilus.png";
 public ilusWebp: string = "assets/ilus.webp";
-public after: string = "assets/after.svg";
-public ser: string = "assets/ser.svg";
+public after: string = "assets/after.png";
+public ser: string = "assets/ser.webp";
 
-public person: string = "assets/resperson.svg";
-public map: string ="assets/map.svg";
-public last: string ="assets/last.svg";
+public person: string = "assets/resperson.webp";
+public map: string ="assets/map.png";
+public last: string ="assets/last.webp";
 
 }

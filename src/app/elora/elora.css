@@ -11,8 +11,9 @@
 
 
 .elora{
-    object-fit:fill;
-    width: 50%;
+    object-fit:contain;
+    padding: 16px;
+    width: 40%;
     height: auto;
 }
 
@@ -302,7 +303,7 @@ color: black;
 .mobelora{
     width: 170px;
     height: auto;
-    object-fit: fill;
+    object-fit: contain;
 }
 
 .eldes{
