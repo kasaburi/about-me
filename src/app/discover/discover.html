@@ -125,7 +125,7 @@
         <div class="userflow"> 
             <p class="flow" >Wiframe</p>
             <div class="uxbox">
-                <img [src]="wiframe" alt="logo" class="wiframe" loading="lazy" decoding="async">
+                <picture style="display: contents;"><source [srcset]="wiframeWebp" type="image/webp"><img [src]="wiframe" alt="logo" class="wiframe" loading="lazy" decoding="async"></picture>
             </div>
         </div>
         <img [src]="comp" alt="logo" class="comp" loading="lazy" decoding="async">

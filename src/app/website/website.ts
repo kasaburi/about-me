@@ -17,6 +17,7 @@ export class Website {
   langMenuOpen = false;
 
   public desing: string = 'assets/desing.png';
+  public desingWebp: string = 'assets/desing.webp';
 
   constructor(private translate: TranslateService) {
     this.selectedLanguage = this.translate.currentLang || this.translate.defaultLang || 'ka';

@@ -56,7 +56,7 @@ export class Footer {
     }
   }
 
-  public img: string = 'assets/icon.png';
+  public img: string = 'assets/icon.svg';
   public images: string[] = [
     'assets/natia.jpg',
     'assets/natia1.jpg'

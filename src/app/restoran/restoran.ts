@@ -11,6 +11,7 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class Restoran {
 public ilus: string = "assets/ilus.png";
+public ilusWebp: string = "assets/ilus.webp";
 public after: string = "assets/after.svg";
 public ser: string = "assets/ser.svg";
 

@@ -31,7 +31,7 @@
     <img [src]="table" alt="logo" class="table" loading="lazy" decoding="async">
     <div class="userbox">
         <img [src]="fixper" alt="logo" class="person" loading="lazy" decoding="async">
-        <img [src]="fixwi" alt="logo" class="person" loading="lazy" decoding="async">
+        <picture style="display: contents;"><source [srcset]="fixwiWebp" type="image/webp"><img [src]="fixwi" alt="logo" class="person" loading="lazy" decoding="async"></picture>
     </div>
       <div class="userbox">
         <img [src]="fixcomp" alt="logo" class="person" loading="lazy" decoding="async">

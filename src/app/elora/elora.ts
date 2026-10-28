@@ -22,6 +22,7 @@ public person1: string = "assets/eloraperson1.svg";
 public auth: string = "assets/auth.svg";
 public registre: string = "assets/registre.svg";
 public elorawiframe: string = "assets/wiframe.png";
+public elorawiframeWebp: string = "assets/wiframe.webp";
 public deswif: string = "assets/deswif.svg";
 
 public desingel: string = "assets/desingel.svg";

@@ -16,13 +16,18 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class Desing {
 
-  public img: string = 'assets/icon.png';
+  public img: string = 'assets/icon.svg';
 
   // ICE CREAM
   public ice: string[] = [
     'assets/ice.png',
     'assets/ice1.png',
     'assets/ice2.png'
+  ];
+  public iceWebp: string[] = [
+    'assets/ice.webp',
+    'assets/ice1.webp',
+    'assets/ice2.webp'
   ];
 
   iceIndex = 0;
@@ -45,6 +50,11 @@ export class Desing {
     'assets/hotel1.png',
     'assets/hotel2.png'
   ];
+  public hotelWebp: string[] = [
+    'assets/hotel.webp',
+    'assets/hotel1.webp',
+    'assets/hotel2.webp'
+  ];
 
   hotelIndex = 0;
 
@@ -65,6 +75,11 @@ export class Desing {
     'assets/shop.png',
     'assets/shop1.png',
     'assets/shop2.png'
+  ];
+  public shopingWebp: string[] = [
+    'assets/shop.webp',
+    'assets/shop1.webp',
+    'assets/shop2.webp'
   ];
 
   currentIndex1 = 0;
@@ -89,6 +104,11 @@ export class Desing {
     'assets/res1.png',
     'assets/res2.png'
   ];
+  public restoranimgWebp: string[] = [
+    'assets/res.webp',
+    'assets/res1.webp',
+    'assets/res2.webp'
+  ];
 
   restoranIndex = 0;
 
@@ -109,8 +129,11 @@ export class Desing {
   // KRIPTO
   public criptoimg: string[] = [
     'assets/cripto.png',
-    'assets/cripto1.png',
-    'assets/cripto2.png'
+    'assets/cripto1.png'
+  ];
+  public criptoimgWebp: string[] = [
+    'assets/cripto.webp',
+    'assets/cripto1.webp'
   ];
 
   criptoIndex = 0;
@@ -135,6 +158,11 @@ export class Desing {
     'assets/ai1.png',
     'assets/ai2.png'
   ];
+  public aiimgWebp: string[] = [
+    'assets/ai.webp',
+    'assets/ai1.webp',
+    'assets/ai2.webp'
+  ];
 
   aiIndex = 0;
 
@@ -158,6 +186,11 @@ export class Desing {
     'assets/work1.png',
     'assets/work2.png'
   ];
+  public workimgWebp: string[] = [
+    'assets/work.webp',
+    'assets/work1.webp',
+    'assets/work2.webp'
+  ];
 
   workIndex = 0;
 
@@ -180,6 +213,11 @@ export class Desing {
     'assets/fix.png',
     'assets/fix1.png',
     'assets/fix2.png'
+  ];
+  public fiximgWebp: string[] = [
+    'assets/fix.webp',
+    'assets/fix1.webp',
+    'assets/fix2.webp'
   ];
 
   fixIndex = 0;

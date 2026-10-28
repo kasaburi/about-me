@@ -26,7 +26,7 @@ import { TranslateModule, } from '@ngx-translate/core';
 
 export class Desing {
 
-  public img: string = 'assets/icon.png';
+  public img: string = 'assets/icon.svg';
 
   // =========================
   // ICE CREAM
@@ -131,7 +131,6 @@ export class Desing {
   public criptoimg: string[] = [
     'assets/cripto.png',
     'assets/cripto1.png',
-    'assets/cripto2.png',
   ];
 
   criptoIndex = 0;

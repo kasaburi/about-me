@@ -1,6 +1,6 @@
 <main>
     <div class="desing">
-        <img [src]="desing" alt="desing" class="desing1" fetchpriority="high" decoding="async">
+        <picture style="display: contents;"><source [srcset]="desingWebp" type="image/webp"><img [src]="desing" alt="desing" class="desing1" fetchpriority="high" decoding="async"></picture>
         <div class="piar">
             <p class="see" [innerHTML]="'ABOUT_ME.des' | translate"></p>
             <p>UI/UX Web Design</p>

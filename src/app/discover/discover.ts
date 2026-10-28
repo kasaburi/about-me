@@ -22,6 +22,7 @@ public ux1: string = "assets/ux1.svg";
 public userflow: string = "assets/flow.svg";
 public flow1: string = "assets/flow1.svg";
 public wiframe: string = "assets/wiframe.png";
+public wiframeWebp: string = "assets/wiframe.webp";
 public comp: string = "assets/comp.svg";
 
 

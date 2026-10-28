@@ -1,7 +1,7 @@
 <div class="conteiner">
     <h1>Kitchen</h1>
     <div class="conteiner1">
-        <img [src]="ilus" alt="logo" class="ilus" fetchpriority="high" decoding="async">
+        <picture style="display: contents;"><source [srcset]="ilusWebp" type="image/webp"><img [src]="ilus" alt="logo" class="ilus" fetchpriority="high" decoding="async"></picture>
         <div  class="box">
             <div class="content">
                 <p [innerHTML]="'Kitchen.title' | translate"  class="title"></p>
