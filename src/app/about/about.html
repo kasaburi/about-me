@@ -24,9 +24,9 @@
             <p [innerHTML]="'me.goalme' | translate" ></p>
         </div>
         <div class="imgbox">
-            <img [src]="desing" alt="Certificate" class="des1" loading="lazy" decoding="async"/>
-            <img [src]="des" alt="Certificate" class="des" loading="lazy" decoding="async"/>
-            <img [src]="mob" alt="Certificate" class="des" loading="lazy" decoding="async"/>
+            <img [src]="desing" alt="Certificate" class="des1" decoding="async"/>
+            <img [src]="des" alt="Certificate" class="des" decoding="async"/>
+            <img [src]="mob" alt="Certificate" class="des"  decoding="async"/>
         </div>
         <div class="me">
             <p [innerHTML]="'me.skills' | translate" class="Front"></p>
@@ -50,7 +50,7 @@
             </div>
         </div>
         <div class="slider">
-            <img [src]="cer[currentSlide]" alt="Certificate" class="imgslid" loading="lazy" decoding="async"/>
+            <img [src]="cer[currentSlide]" alt="Certificate" class="imgslid"  decoding="async"/>
             <button class="prev" (click)="previousSlide()"> ❮ </button>
             <button class="next" (click)="nextSlide()">  ❯ </button>
         </div>

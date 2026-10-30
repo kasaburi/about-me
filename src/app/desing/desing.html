@@ -24,7 +24,7 @@
         <div class="hotel">
             <div class="imghotel">
                 <button class="hotprev" (pointerdown)="hotelPrev()">&#10094;</button>
-                <picture style="display: contents;"><source [srcset]="hotelWebp[hotelIndex]" type="image/webp"><img [src]="hotel[hotelIndex]" alt="Slide Image" class="hotelimg" loading="lazy" decoding="async" /></picture>
+                <picture style="display: contents;"><source [srcset]="hotelWebp[hotelIndex]" type="image/webp"><img [src]="hotel[hotelIndex]" alt="Slide Image" class="hotelimg" decoding="async" /></picture>
                 <button class="hotnext" (pointerdown)="hotelNext()">&#10095;</button>
             </div>
             <div class="border1">
@@ -41,7 +41,7 @@
         <div class="shoping">
             <div class="shopimg">
                 <button class="nav-btnprev" (pointerdown)="prev1()">&#10094;</button>
-                <picture style="display: contents;"><source [srcset]="shopingWebp[currentIndex1]" type="image/webp"><img [src]="shoping[currentIndex1]" alt="Slide Image" class="images" loading="lazy" decoding="async" /></picture>
+                <picture style="display: contents;"><source [srcset]="shopingWebp[currentIndex1]" type="image/webp"><img [src]="shoping[currentIndex1]" alt="Slide Image" class="images"  decoding="async" /></picture>
                 <button class="nav-btnnext" (pointerdown)="next1()">&#10095;</button>
             </div>
             <div class="border2">
@@ -56,7 +56,7 @@
         <div class="restoran" id="restoran">
             <div class="resimg">
                 <button class="resprev" (pointerdown)="resPrev()">&#10094;</button>
-                <picture style="display: contents;"><source [srcset]="restoranimgWebp[restoranIndex]" type="image/webp"><img [src]="restoranimg[restoranIndex]" alt="Slide Image" class="imgres" loading="lazy" decoding="async" /></picture>
+                <picture style="display: contents;"><source [srcset]="restoranimgWebp[restoranIndex]" type="image/webp"><img [src]="restoranimg[restoranIndex]" alt="Slide Image" class="imgres"  decoding="async" /></picture>
                 <button class="resnext" (pointerdown)="resNext()">&#10095;</button>
             </div>
             <div class="border3">
@@ -71,7 +71,7 @@
         <div class="kripto" id="kripto">
             <div class="kriptoimg">
                 <button class="resprev" (pointerdown)="criptoPrev()"> &#10094;</button>
-                <picture style="display: contents;"><source [srcset]="criptoimgWebp[criptoIndex]" type="image/webp"><img [src]="criptoimg[criptoIndex]" alt="Slide Image" class="aiimg" loading="lazy" decoding="async" /></picture>
+                <picture style="display: contents;"><source [srcset]="criptoimgWebp[criptoIndex]" type="image/webp"><img [src]="criptoimg[criptoIndex]" alt="Slide Image" class="aiimg" decoding="async" /></picture>
                 <button class="resnext" (pointerdown)="criptoNext()"> &#10095;  </button>
             </div>
             <div class="border3">
@@ -86,7 +86,7 @@
         <div class="ai" id="ai">
             <div class="hot">
                 <button class="resprev"(pointerdown)="aiPrev()">  &#10094;</button>
-                <picture style="display: contents;"><source [srcset]="aiimgWebp[aiIndex]" type="image/webp"><img [src]="aiimg[aiIndex]" alt="Slide Image" class="aiimg" loading="lazy" decoding="async" /></picture>
+                <picture style="display: contents;"><source [srcset]="aiimgWebp[aiIndex]" type="image/webp"><img [src]="aiimg[aiIndex]" alt="Slide Image" class="aiimg"  decoding="async" /></picture>
                 <button class="resnext"  (pointerdown)="aiNext()">  &#10095; </button>
             </div>
             <div class="border3">
@@ -101,7 +101,7 @@
         <div class="job" id="job">
             <div class="joba">
                 <button class="resprev" (pointerdown)="workPrev()">  &#10094;</button>
-                <picture style="display: contents;"><source [srcset]="workimgWebp[workIndex]" type="image/webp"><img [src]="workimg[workIndex]" alt="Slide Image" class="jobimg" loading="lazy" decoding="async" /></picture>
+                <picture style="display: contents;"><source [srcset]="workimgWebp[workIndex]" type="image/webp"><img [src]="workimg[workIndex]" alt="Slide Image" class="jobimg"  decoding="async" /></picture>
                 <button class="resnext" (pointerdown)="workNext()"></button>
             </div>
             <div class="border3">
@@ -116,7 +116,7 @@
         <div class="fixgeorgia" id="fix">
             <div class="geo">
                 <button class="resprev" (pointerdown)="fixPrev()">&#10094;</button>
-                <picture style="display: contents;"><source [srcset]="fiximgWebp[fixIndex]" type="image/webp"><img [src]="fiximg[fixIndex]" alt="Slide Image" class="imgres" loading="lazy" decoding="async" /></picture>
+                <picture style="display: contents;"><source [srcset]="fiximgWebp[fixIndex]" type="image/webp"><img [src]="fiximg[fixIndex]" alt="Slide Image" class="imgres" decoding="async" /></picture>
                 <button class="resnext" (pointerdown)="fixNext()">  &#10095;</button>
             </div>
             <div class="border3">
