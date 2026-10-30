@@ -119,7 +119,6 @@ body.dark-mode .text,
 body.dark-mode .palitra,
 body.dark-mode .color,
 body.dark-mode ul,
-.body.dark-mode .div,
 .body.dark-mode .box
 
 
@@ -130,9 +129,6 @@ body.dark-mode ul,
 
 
 
-
-
-.body.dark-mode .content,
 .body.dark-mode .eloratext,
 .body.dark-mode ul,
 .body.dark-mode li{
@@ -207,6 +203,13 @@ body.dark-mode .site:hover{
   background: #1e213a;
 }
 
+body.dark-mode .div,
+body.dark-mode .content,
+body.dark-mode ul
+ {
+    background-color: #1e213a !important;
+    border: none !important;
+}
 
 
 
@@ -302,13 +305,19 @@ body.dark-mode .userconteiner1,
 body.dark-mode .userconteiner,
 body.dark-mode  .businessbox,
 body.dark-mode  .imgbox,
-body.dark-mode .elorabox,
 body.dark-mode .name,
 body.dark-mode .nameel
 
 {
     background: #15172b;
     color: rgba(246, 240, 240, 0.797);
+}
+
+
+body.dark-mode .elorabox{
+    background: #15172b;
+    color: rgba(246, 240, 240, 0.797);
+     border: 1px solid #0e0e0f5d;
 }
 
 
