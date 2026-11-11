@@ -1,5 +1,5 @@
 <header class="header">
-    <div class="inbox notranslate" translate="no">
+    <div class="inbox notranslate">
         <a routerLink="/"><img [src]="kc" alt="kc" class="kc" fetchpriority="high" decoding="async"></a>
     </div>
     <div class="page">
@@ -19,10 +19,10 @@
             </a>
         </li>
     </div>
-    <button class="burger notranslate" translate="no" (click)="toggleMenu()" aria-label="Toggle navigation menu">☰</button>
+    <button class="burger notranslate"  (click)="toggleMenu()" aria-label="Toggle navigation menu">☰</button>
     <div class="desktop">
-        <div class="header-controls notranslate" translate="no">
-            <button class="lang-pill-btn notranslate" translate="no" type="button" (click)="toggleLanguage()" [attr.aria-label]="currentLanguage === 'ka' ? 'Switch to English' : 'გადართვა ქართულზე'" [title]="currentLanguage === 'ka' ? 'Switch to English (ENG)' : 'გადართვა ქართულზე (KA)'">
+        <div class="header-controls notranslate" >
+            <button class="lang-pill-btn notranslate"  type="button" (click)="toggleLanguage()" [attr.aria-label]="currentLanguage === 'ka' ? 'Switch to English' : 'გადართვა ქართულზე'" [title]="currentLanguage === 'ka' ? 'Switch to English (ENG)' : 'გადართვა ქართულზე (KA)'">
                 <svg class="globe-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <circle cx="12" cy="12" r="10"/>
                     <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
@@ -31,7 +31,7 @@
                 <span class="lang-text" [class.animating]="isLangFlipping"> {{ currentLanguage === 'ka' ? 'KA' : 'ENG' }} </span>
                 <span class="active-indicator" [class.eng]="currentLanguage === 'eng'"></span>
             </button>
-            <button class="theme-pill-btn notranslate" translate="no" type="button" (click)="toggleDarkMode()" [attr.aria-label]="theme === 'dark' ? 'დღის რეჟიმზე გადართვა' : 'ღამის რეჟიმზე გადართვა'"
+            <button class="theme-pill-btn notranslate" type="button" (click)="toggleDarkMode()" [attr.aria-label]="theme === 'dark' ? 'დღის რეჟიმზე გადართვა' : 'ღამის რეჟიმზე გადართვა'"
                 [title]="theme === 'dark' ? 'Light Mode (დღის რეჟიმი)' : 'Dark Mode (ღამის რეჟიმი)'" id="mode">
                 @if (theme === 'dark') {
                 <svg class="theme-svg moon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -53,11 +53,11 @@
             </button>
         </div>
     </div> 
-    <div class="boximg notranslate" translate="no" title="Natia Kasaburi"></div>
+    <div class="boximg notranslate"  title="Natia Kasaburi"></div>
     <div class="mobile-menu" *ngIf="menuOpen">
-        <button class="close-btn notranslate" translate="no" (click)="closeMenu()" aria-label="Close menu">✕</button>
-        <div class="mobile-actions-bar notranslate" translate="no">
-            <button class="lang-pill-btn mobile-action notranslate" translate="no" type="button" (click)="toggleLanguage()"
+        <button class="close-btn notranslate" (click)="closeMenu()" aria-label="Close menu">✕</button>
+        <div class="mobile-actions-bar notranslate" >
+            <button class="lang-pill-btn mobile-action notranslate"  type="button" (click)="toggleLanguage()"
                 [attr.aria-label]="currentLanguage === 'ka' ? 'Switch to English' : 'გადართვა ქართულზე'">
                 <svg class="globe-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <circle cx="12" cy="12" r="10"/>
@@ -69,7 +69,7 @@
                 </span>
                 <span class="active-indicator" [class.eng]="currentLanguage === 'eng'"></span>
             </button>
-            <button class="theme-pill-btn mobile-action notranslate" translate="no" type="button" (click)="toggleDarkMode()" [attr.aria-label]="theme === 'dark' ? 'Light Mode' : 'Dark Mode'">
+            <button class="theme-pill-btn mobile-action notranslate"  type="button" (click)="toggleDarkMode()" [attr.aria-label]="theme === 'dark' ? 'Light Mode' : 'Dark Mode'">
                 @if (theme === 'dark') {
                 <svg class="theme-svg moon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" fill="currentColor" fill-opacity="0.25"/>
