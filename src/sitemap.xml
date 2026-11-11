@@ -1,11 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home / Portfolio Main -->
+  <url>
+    <loc>https://kascraft.vercel.app/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://kascraft.vercel.app/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kascraft.vercel.app/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kascraft.vercel.app/" />
+  </url>
 
-<url>
-<loc>https://kascraft.vercel.app/</loc>
-<priority>1.0</priority>
-<changefreq>weekly</changefreq>
-</url>
+  <!-- About Me -->
+  <url>
+    <loc>https://kascraft.vercel.app/about</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://kascraft.vercel.app/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kascraft.vercel.app/about" />
+  </url>
+
+  <!-- Design Root -->
+  <url>
+    <loc>https://kascraft.vercel.app/desing</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://kascraft.vercel.app/desing" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kascraft.vercel.app/desing" />
+  </url>
+
+  <!-- Discover Georgia Case Study -->
+  <url>
+    <loc>https://kascraft.vercel.app/desing/discover</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://kascraft.vercel.app/desing/discover" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kascraft.vercel.app/desing/discover" />
+  </url>
+
+  <!-- Elora Delivery App Case Study -->
+  <url>
+    <loc>https://kascraft.vercel.app/desing/elora</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://kascraft.vercel.app/desing/elora" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kascraft.vercel.app/desing/elora" />
+  </url>
+
+  <!-- Restoran Dining Case Study -->
+  <url>
+    <loc>https://kascraft.vercel.app/desing/restoran</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://kascraft.vercel.app/desing/restoran" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kascraft.vercel.app/desing/restoran" />
+  </url>
+
+  <!-- Fix Georgia Civic Platform Case Study -->
+  <url>
+    <loc>https://kascraft.vercel.app/desing/fix</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://kascraft.vercel.app/desing/fix" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kascraft.vercel.app/desing/fix" />
+  </url>
 
 </urlset>

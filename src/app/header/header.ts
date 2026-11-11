@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -10,7 +11,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   templateUrl: './header.html',
   styleUrl: './header.css',
 })
-export class Header implements OnInit {
+export class Header implements OnInit, OnDestroy {
   public currentLanguage: 'ka' | 'eng' = 'ka';
   public isLangFlipping: boolean = false;
 
@@ -21,17 +22,39 @@ export class Header implements OnInit {
   public langMenuOpen: boolean = false;
   public menuOpen: boolean = false;
 
-  constructor(private translate: TranslateService) {
-    const initialLang = (this.translate.currentLang || this.translate.defaultLang || 'ka') as 'ka' | 'eng';
-    this.currentLanguage = initialLang === 'eng' ? 'eng' : 'ka';
-    this.selectedLanguage = this.currentLanguage;
-    this.translate.setDefaultLang(this.currentLanguage);
-    this.translate.use(this.currentLanguage);
+  private langSub = new Subscription();
 
-    this.translate.onLangChange.subscribe(event => {
+  constructor(private translate: TranslateService) {
+    const saved = typeof localStorage !== 'undefined' ? localStorage.getItem('lang') : null;
+    const initialLang: 'ka' | 'eng' =
+      saved === 'eng' ? 'eng' :
+      saved === 'ka' ? 'ka' :
+      ((this.translate.currentLang || this.translate.defaultLang || 'ka') === 'eng' ? 'eng' : 'ka');
+
+    this.currentLanguage = initialLang;
+    this.selectedLanguage = this.currentLanguage;
+    this.translate.setDefaultLang('ka');
+    this.translate.use(this.currentLanguage);
+    this.syncDocumentLang(this.currentLanguage);
+
+    this.langSub = this.translate.onLangChange.subscribe(event => {
       this.currentLanguage = event.lang === 'eng' ? 'eng' : 'ka';
       this.selectedLanguage = this.currentLanguage;
+      this.syncDocumentLang(this.currentLanguage);
+      if (typeof localStorage !== 'undefined') {
+        try {
+          localStorage.setItem('lang', this.currentLanguage);
+        } catch {
+          // ignore storage error
+        }
+      }
     });
+  }
+
+  private syncDocumentLang(lang: 'ka' | 'eng'): void {
+    if (typeof document !== 'undefined' && document.documentElement) {
+      document.documentElement.lang = lang === 'eng' ? 'en' : 'ka';
+    }
   }
 
   ngOnInit() {
@@ -45,6 +68,10 @@ export class Header implements OnInit {
         this.theme = 'light';
       }
     }
+  }
+
+  ngOnDestroy(): void {
+    this.langSub.unsubscribe();
   }
 
   /**
@@ -64,7 +91,15 @@ export class Header implements OnInit {
     this.currentLanguage = langCode;
     this.selectedLanguage = langCode;
     this.translate.use(langCode);
+    this.syncDocumentLang(langCode);
     this.langMenuOpen = false;
+    if (typeof localStorage !== 'undefined') {
+      try {
+        localStorage.setItem('lang', langCode);
+      } catch {
+        // ignore
+      }
+    }
   }
 
   public toggleDarkMode(): void {

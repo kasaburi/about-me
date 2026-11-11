@@ -1,43 +1,106 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ka">
   <head>
     <meta charset="UTF-8">
-    <title>KasCraft | UI/UX Designer & Web Developer Portfolio</title>
+    <title>KasCraft | UI/UX დიზაინერი & Frontend დეველოპერი</title>
     <base href="/">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- SEO -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <!-- Primary SEO -->
+    <meta name="author" content="Natia Kasaburi (KasCraft)">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="description" content="KasCraft — UI/UX დიზაინისა და Frontend ვებ დეველოპმენტის პორტფოლიო. თანამედროვე ვებსაიტები, ციფრული პროდუქტები და Figma დიზაინ-სისტემები. Natia Kasaburi.">
+    <meta name="keywords" content="KasCraft, Natia Kasaburi, UI UX designer, web developer, frontend developer, Angular, Figma, user experience, user interface, web design, Tbilisi, Georgia portfolio">
+    <meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
     <meta name="google-site-verification" content="YMHQ0Dw3kk5ymYM58UGkgrQDMIxjR1WuQyYJZHpxl6Y" />
-    <meta name="author" content="KasCraft">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#111111">
-    <!-- Description (IMPORTANT) -->
-    <meta name="description" content="KasCraft — UI/UX Design & Web Development Portfolio. Modern websites, user experience design, and frontend development projects.">
-    <!-- Keywords (optional, not used by Google anymore) -->
-    <meta name="keywords" content="KasCraft, portfolio, UI UX designer, web developer, frontend, web design, figma, user experience, user interface">
-    <!-- Canonical -->
+
+    <!-- Geo Meta Tags for Search Engines -->
+    <meta name="geo.region" content="GE">
+    <meta name="geo.placename" content="Tbilisi">
+    <meta name="geo.position" content="41.7151;44.8271">
+    <meta name="ICBM" content="41.7151, 44.8271">
+
+    <!-- Canonical & Multilingual Alternate Links -->
     <link rel="canonical" href="https://kascraft.vercel.app/">
-    <!-- Open Graph -->
+    <link rel="alternate" hreflang="ka" href="https://kascraft.vercel.app/">
+    <link rel="alternate" hreflang="en" href="https://kascraft.vercel.app/">
+    <link rel="alternate" hreflang="x-default" href="https://kascraft.vercel.app/">
+
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="KasCraft | UI/UX Designer & Web Developer">
-    <meta property="og:description" content="UI/UX Design, web development and digital product portfolio by KasCraft.">
-    <meta property="og:image" content="https://kascraft.vercel.app/assets/kc.svg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
     <meta property="og:url" content="https://kascraft.vercel.app/">
     <meta property="og:site_name" content="KasCraft">
-    <meta property="og:locale" content="en_US">
-    <!-- Twitter -->
+    <meta property="og:title" content="KasCraft | UI/UX Designer & Web Developer Portfolio">
+    <meta property="og:description" content="UI/UX Design, modern web development, and digital product portfolio by Natia Kasaburi (KasCraft).">
+    <meta property="og:image" content="https://kascraft.vercel.app/assets/kc.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="KasCraft Portfolio Logo">
+    <meta property="og:locale" content="ka_GE">
+    <meta property="og:locale:alternate" content="en_US">
+
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="KasCraft | UI/UX Designer & Web Developer">
-    <meta name="twitter:description" content="UI/UX design and frontend development portfolio.">
-    <meta name="twitter:image" content="https://kascraft.vercel.app/assets/kc.svg">
-    <!-- Favicon -->
+    <meta name="twitter:url" content="https://kascraft.vercel.app/">
+    <meta name="twitter:title" content="KasCraft | UI/UX Designer & Web Developer Portfolio">
+    <meta name="twitter:description" content="UI/UX Design, modern web development, and digital product portfolio by Natia Kasaburi (KasCraft).">
+    <meta name="twitter:image" content="https://kascraft.vercel.app/assets/kc.png">
+
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/svg+xml" href="/assets/kc.svg">
     <link rel="icon" type="image/webp" href="/assets/kc.webp">
-    <link rel="icon" type="image/png" href="/assets/kc.png">
-    <link rel="apple-touch-icon" href="/assets/kc.svg">
-    <!-- Fonts -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/kc.png">
+    <link rel="apple-touch-icon" href="/assets/kc.png">
+
+    <!-- Google Fonts Preconnect & Optimized Loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;600;700&family=Instrument+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Schema.org JSON-LD Structured Data for Rich Search Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://kascraft.vercel.app/#person",
+          "name": "Natia Kasaburi",
+          "alternateName": "KasCraft",
+          "url": "https://kascraft.vercel.app/",
+          "jobTitle": "UI/UX Designer & Frontend Web Developer",
+          "sameAs": [
+            "https://github.com/kasaburi",
+            "https://www.linkedin.com/in/natia-kasaburi-963009383/"
+          ],
+          "knowsAbout": [
+            "UI/UX Design",
+            "Figma",
+            "Frontend Web Development",
+            "Angular",
+            "JavaScript",
+            "HTML5",
+            "CSS3",
+            "Responsive Web Design",
+            "Prototyping"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://kascraft.vercel.app/#website",
+          "url": "https://kascraft.vercel.app/",
+          "name": "KasCraft",
+          "description": "Portfolio of Natia Kasaburi - UI/UX Designer & Frontend Web Developer",
+          "publisher": {
+            "@id": "https://kascraft.vercel.app/#person"
+          },
+          "inLanguage": ["ka-GE", "en-US"]
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <app-root></app-root>

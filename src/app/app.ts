@@ -1,8 +1,9 @@
-import { Component, signal, OnInit } from '@angular/core';
+import { Component, signal, OnInit, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Footer } from './footer/footer';
 import { Header } from './header/header';
 import { AiAssistant } from './ai-assistant/ai-assistant';
+import { SeoService } from './services/seo.service';
 
 @Component({
   selector: 'app-root',
@@ -12,11 +13,24 @@ import { AiAssistant } from './ai-assistant/ai-assistant';
   styleUrl: './app.css'
 })
 export class App implements OnInit {
-  loading = signal(true);
+  private seoService = inject(SeoService);
+  loading = signal(false);
 
   ngOnInit() {
-    setTimeout(() => {
-      this.loading.set(false);
-    }, 3800);
+    this.seoService.init();
+
+    // Only show intro once per user session to avoid blocking repeated navigation
+    const hasSeenIntro = typeof sessionStorage !== 'undefined' ? sessionStorage.getItem('intro_seen') : null;
+    if (!hasSeenIntro) {
+      this.loading.set(true);
+      setTimeout(() => {
+        this.loading.set(false);
+        try {
+          sessionStorage.setItem('intro_seen', 'true');
+        } catch {
+          // ignore if storage blocked
+        }
+      }, 3400);
+    }
   }
 }

@@ -21,14 +21,22 @@ export class CustomLoader implements TranslateLoader {
   constructor(private http: HttpClient) {}
 
   getTranslation(lang: string): Observable<any> {
-    const cleanLang = (lang || 'ka').toLowerCase().trim();
+    let cleanLang = (lang || 'ka').toLowerCase().trim();
+    if (cleanLang === 'en') cleanLang = 'eng';
+    if (cleanLang === 'ge') cleanLang = 'ka';
+
     if (!this.cache.has(cleanLang)) {
-      const translation$ = this.http.get(`assets/i18n/${cleanLang}.json`).pipe(
-        timeout(6000),
+      const translation$ = this.http.get(`/assets/i18n/${cleanLang}.json`).pipe(
+        timeout(4000),
         shareReplay(1),
         catchError((err) => {
-          console.warn(`[Translate] Failed to load translations for "${cleanLang}":`, err);
-          return of({});
+          console.warn(`[Translate] Absolute path /assets/i18n/${cleanLang}.json failed, trying relative:`, err);
+          return this.http.get(`assets/i18n/${cleanLang}.json`).pipe(
+            catchError((fallbackErr) => {
+              console.warn(`[Translate] Fallback translation failed for "${cleanLang}":`, fallbackErr);
+              return of({});
+            })
+          );
         })
       );
       this.cache.set(cleanLang, translation$);
@@ -45,7 +53,8 @@ export const appConfig: ApplicationConfig = {
     provideRouter(
       routes,
       withInMemoryScrolling({
-        scrollPositionRestoration: 'top'
+        scrollPositionRestoration: 'top',
+        anchorScrolling: 'enabled'
       }),
       withPreloading(PreloadAllModules)
     ),

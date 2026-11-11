@@ -1,24 +1,24 @@
 <app-header></app-header>
+<router-outlet></router-outlet>
+<app-ai-assistant></app-ai-assistant>
+<app-footer></app-footer>
+
 @if (loading()) {
-  <div class="intro">
+  <div class="intro notranslate" translate="no" aria-hidden="true">
     <div class="grid"></div>
     <div class="light"></div>
     <div class="intro-content">
-      <div class="small-text"> Kascraft</div>
+      <div class="small-text">Kascraft</div>
       <h1>
         <span>UI/UX DESIGN</span>
         <span>Web desing</span> 
       </h1>
       <div class="line"></div>
-       <p>Natia kasaburi</p>
+      <p>Natia kasaburi</p>
     </div>
-    <div class="corner top-left"> 2026</div>
-    <div class="corner top-right"> Kascraft</div>
+    <div class="corner top-left">2026</div>
+    <div class="corner top-right">Kascraft</div>
     <div class="corner bottom-left">TBILISI / GEORGIA</div>
-    <div class="corner bottom-right">  01 — 04</div>
+    <div class="corner bottom-right">01 — 04</div>
   </div>
-} @else {
-  <router-outlet></router-outlet>
-  <app-ai-assistant></app-ai-assistant>
 }
-<app-footer></app-footer>
